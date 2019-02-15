@@ -35,12 +35,11 @@ type('He looked at her and said "solid work is crucial for advancing in every as
                      #^
 #SyntaxError: invalid token
 
-#Varibles
+#Variables
 
 #To define variables we can use long names and numbers but name
 #has too start from a letter. We can't use special signs
-#for va
-# riables names.
+#for variables names.
 
 message="that's very interesting point sir"
 n=123
