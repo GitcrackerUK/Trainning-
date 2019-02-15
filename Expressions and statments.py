@@ -39,7 +39,8 @@ type('He looked at her and said "solid work is crucial for advancing in every as
 
 #To define variables we can use long names and numbers but name
 #has too start from a letter. We can't use special signs
-#for variables names.
+#for va
+# riables names.
 
 message="that's very interesting point sir"
 n=123
@@ -57,3 +58,38 @@ type(twelve)
 
 type(message)
 #<class 'str'>
+
+#Keywords
+
+#Python has thirtyone keywords
+
+#and-
+#as
+#assert
+#break
+#class
+#continue
+#def
+#del
+#elif
+#else
+#except
+#exec
+#finally
+#for
+#from
+#global
+#if
+#import
+#in
+#is
+#lambda
+#or
+#pass
+#print
+#raise
+#return
+#try
+#while
+#with
+#yield
