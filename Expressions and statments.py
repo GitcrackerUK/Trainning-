@@ -60,7 +60,7 @@ type(message)
 
 #Keywords
 
-#Python has thirtyone keywords
+#Python has over thirty keywords
 
 #and-
 #as
@@ -92,3 +92,11 @@ type(message)
 #while
 #with
 #yield
+
+
+#len counts list elements
+#sum adds the iterable items
+
+#iterator
+#iteration
+#iterable
