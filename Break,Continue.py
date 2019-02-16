@@ -27,6 +27,9 @@ for i in range (0,20):
 # 11
 
 
+
+#BREAK
+
 for i in range (0,20):
     if i == 11:
         break
@@ -44,6 +47,10 @@ for i in range (0,20):
 # 9
 # 10
 
+
+
+
+#CONTINUE
 
 for i in range (0,20):
     if i == 11:
@@ -69,3 +76,4 @@ for i in range (0,20):
 # 17
 # 18
 # 19
+
