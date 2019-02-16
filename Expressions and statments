@@ -66,10 +66,10 @@ and-logic operator which returns True if only both values are true.
 
 as - as is used to create an alias while importing a module
 
-assert - is used for debugging purpose.
-break - is used inside FOR and WHILE loops. BREAK will end small loop in its flows to the statment below the loop
+assert - used for debugging purpose.
+break -  used inside FOR and WHILE loops. BREAK will end small loop in its flows to the statment below the loop
 class
-continue
+continue -
 def
 del
 elif
@@ -87,8 +87,8 @@ is
 lambda
 
 not- logic operator used to invert value.
-True == (not False)
-True
+#True == (not False)
+#True
 
 or- logic operator which returns True if both values are true. If one value is true, returns this value, otherwise return False.
 pass
