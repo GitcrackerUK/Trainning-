@@ -68,8 +68,8 @@ as - as is used to create an alias while importing a module
 
 assert - used for debugging purpose.
 break -  used inside FOR and WHILE loops. BREAK will end small loop in its flows to the statment below the loop
-class
-continue -
+class -
+continue - is used to skip the rest of the code inside a loop for the curen iteration only.
 def
 del
 elif
