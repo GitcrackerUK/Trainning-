@@ -58,23 +58,24 @@ type(twelve)
 type(message)
 <class 'str'>
 
+
+
+
 Keywords
 
-Python has thirty three keywords
+Python has thirty three keywords:
 
 and-logic operator which returns True if only both values are true.
-
 as - as is used to create an alias while importing a module
-
 assert - used for debugging purpose.
 break -  used inside FOR and WHILE loops. BREAK will end small loop in its flows to the statment below the loop
 class -
 continue - is used to skip the rest of the code inside a loop for the current iteration only.
-def-
-del-
-elif
-else
-except
+def- defines function which works only if it's called
+del- delete an object
+elif - allows you to check multiple statment for True, Elif can be used more than once.
+else - is execute when if statment resolve 0 or False
+except-
 exec
 finally
 for
@@ -85,11 +86,9 @@ import
 in
 is
 lambda
-
 not- logic operator used to invert value.
-#True == (not False)
-#True
-
+    True == (not False)
+    True
 or- logic operator which returns True if both values are true. If one value is true, returns this value, otherwise return False.
 pass
 print
@@ -99,10 +98,7 @@ try
 while
 with
 yield
-
-
 len counts list elements
 sum adds the iterable items
-
 iterator
 iteration
