@@ -56,7 +56,9 @@ Twinkle, twinkle, little star,
 # Write a Python program which accepts the user's first and last name
 # and print them in reverse order with a space between them.
 
-# x=input("Enter your first name, please:")
-# y=input("Enter your last  name, please:")
-# print(x[::-1],y[::-1])
-# print((''.join(reversed(x))),(''.join(reversed(y))))
+fname=input("Enter your first name, please:")
+lname=input("Enter your last  name, please:")
+print("Hello",lname,fname)
+
+#6
+
