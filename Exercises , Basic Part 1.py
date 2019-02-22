@@ -38,7 +38,16 @@ Twinkle, twinkle, little star,
 
 #To disply current date and time need be imported datetime module
 
-import datetime
-x = (datetime.datetime.now())
-print("Current date and time: ")
-print(x.strftime("%Y-%m-%d\n%H:%M:%S"))
+# import datetime
+# x = (datetime.datetime.now())
+# print("Current date and time: ")
+# print(x.strftime("%Y-%m-%d\n%H:%M:%S"))
+
+#4
+#Write a Python program which accepts
+# the radius of a circle from the user and compute the area.
+
+from math import pi
+x=float(input("Enter radius"))
+y=pi*(x**2)
+print("Area of the circle with radius", x ,"is:",y)
