@@ -27,13 +27,14 @@ type('one Million fifty thousand ')
 type('He looked at her and said "solid work is crucial for advancing in every aspect of life"')
 <class 'str'>
 
-
-
 type("tell"02734855)
    File "<input>", line 1
      type("tell"02734855)
                      ^
 SyntaxError: invalid token
+
+
+
 
 Variables
 
@@ -75,8 +76,8 @@ def- defines function which works only if it's called
 del- delete an object
 elif - allows you to check multiple statment for True, Elif can be used more than once.
 else - is execute when if statment resolve 0 or False
-except-
-exec
+except- allows to handle error in desire way. It can be programmed to return pre planned action.
+exec-
 finally
 for
 from
@@ -98,7 +99,14 @@ try
 while
 with
 yield
+
+
 len counts list elements
 sum adds the iterable items
+
 iterator
 iteration
+
+
+expresion is  made from operators and operands
+statment  is
