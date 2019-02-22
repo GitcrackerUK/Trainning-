@@ -33,10 +33,12 @@ Twinkle, twinkle, little star,
 # 3.6.7 (default, Oct 22 2018, 11:32:17)
 # [GCC 8.2.0]
 
-# 3 Write a Python program vto display the current date and time.
+# 3
+# Write a Python program to display the current date and time.
 
-#To disply current date and time need be imported mpdule
+#To disply current date and time need be imported datetime module
 
 import datetime
-nx= (datetime.datetime.now())
-print(x)
+x = (datetime.datetime.now())
+print("Current date and time: ")
+print(x.strftime("%Y-%m-%d\n%H:%M:%S"))
