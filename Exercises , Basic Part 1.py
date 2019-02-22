@@ -47,7 +47,16 @@ Twinkle, twinkle, little star,
 #Write a Python program which accepts
 # the radius of a circle from the user and compute the area.
 
-from math import pi
-x=float(input("Enter radius"))
-y=pi*(x**2)
-print("Area of the circle with radius", x ,"is:",y)
+# from math import pi
+# x=float(input("Enter radius"))
+# y=pi*(x**2)
+# print("Area of the circle with radius", x ,"is:",y)
+
+#5
+# Write a Python program which accepts the user's first and last name
+# and print them in reverse order with a space between them.
+
+# x=input("Enter your first name, please:")
+# y=input("Enter your last  name, please:")
+# print(x[::-1],y[::-1])
+# print((''.join(reversed(x))),(''.join(reversed(y))))
