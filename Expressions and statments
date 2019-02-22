@@ -77,8 +77,8 @@ del- delete an object
 elif - allows you to check multiple statment for True, Elif can be used more than once.
 else - is execute when if statment resolve 0 or False
 except- allows to handle error in desire way. It can be programmed to return pre planned action.
-exec-
-finally
+exec- executes external python programs
+finally-
 for
 from
 global
