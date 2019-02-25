@@ -94,6 +94,8 @@ Twinkle, twinkle, little star,
 # print((color_list[0]),(color_list[3]))
 
 #9
+# Write a Python program to display the examination schedule.
+# (extract the date from exam_st_date)
 
 # exam_st_date = (11, 12, 2014)
 # print("The examination will start from: %i/%i/%i" %exam_st_date)
@@ -108,11 +110,14 @@ Twinkle, twinkle, little star,
 # print((n)+(n2)+(n3))
 
 #11
+# Write a Python program to print the documents
+# (syntax, description etc.) of Python built-in function(s).
 
 # print(abs.__doc__)
 # print(map.__doc__)
 
 #12
+# Write a Python program to print the calendar of a given month and year.
 
 # import calendar
 # month=int(input("Insert month:"))
@@ -121,17 +126,16 @@ Twinkle, twinkle, little star,
 
 
 #13
-
 # #Write a Python program to print the following here document.
-#
+
 # print("""a string that you "don't" have to escape
 # This
 # is a ....... multi-line
 # heredoc string --------> example""")
 
 #14
-
 # Write a Python program to calculate number of days between two dates
+
 #A)
 # from datetime import date
 # fd=int(input("insert day:"))
@@ -156,14 +160,13 @@ Twinkle, twinkle, little star,
 # Write a Python program to get the volume of a sphere with radius 6.
 
 # from math import pi
-#
+
 # r=6
 # v=4/3*pi*(r**3)
 # print(v)
 
 #16
-
-#Write a Python program to get the difference between a given number and 17,
+# Write a Python program to get the difference between a given number and 17,
 # if the number is greater than 17 return double the absolute difference.
 
 #A)
@@ -177,41 +180,35 @@ Twinkle, twinkle, little star,
 # print(output)
 
 #B)
-# def difrence(x):
+# def difference(x):
 #     if x > 17 :
 #         out=2*(x-17)
 #     else:
 #         out=17-x
 #     return out
 #
-# print(difrence(3))
-# print(difrence(16))
-# print(difrence(18))
-# print(difrence(25))
-#
-#C)
+# print(difference(3))
+# print(difference(16))
+# print(difference(18))
+# print(difference(25))
 
 
-#17. Write a Python program to test whether a number is within
+#17.
+# Write a Python program to test whether a number is within
 # 100 of 1000 or 2000.
 
 
 
-def within(x):
-    if x <= 100:
-        print(x,"is within 100")
-    if x < 1000:
-        print(x,"is within 1000")
-    if x <2000:
-        print(x,"is within 2000")
-    return
+# def within(x):
+# return((abs(1000-x)<=100) or (abs(2000 - x)<=100))
 
 
+# print(within(400))
+# print(within(1050))
+# print(within(2050))
+# print(within(950))
 
-print(within(400))
-
-
-
-
-
+#18.
+# Write a Python program to calculate the sum of three given numbers,
+# if the values are equal then return thrice of their sum.
 
