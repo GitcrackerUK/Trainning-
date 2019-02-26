@@ -13,6 +13,5 @@ del Myclass
 print(Myclass)
 
 
-#elif
 
 
