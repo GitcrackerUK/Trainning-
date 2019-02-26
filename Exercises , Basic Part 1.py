@@ -2,7 +2,10 @@
 # Write a Python program to print the following string in a specific format
 
 #Sample string:
+
+#docstring
 """Twinkle, twinkle, little star, How I wonder what you are! Up above the world so high, Like a diamond in the sky. Twinkle, twinkle, little star, How I wonder what you are"""
+#docstring
 
 #Output expected:
 """Twinkle, twinkle, little star,
@@ -212,4 +215,51 @@ Twinkle, twinkle, little star,
 # Write a Python program to calculate the sum of three given numbers,
 # if the values are equal then return thrice of their sum.
 
-#19
+#A)
+# a=int(input("Enter a number:"))
+# b=int(input("Enter a number:"))
+# c=int(input("Enter a number:"))
+# if a==b==c:
+#     print((a+b+c)*3)
+# else:
+#     print(a+b+c)
+#B)
+# def sum_trice(x,y,z):
+#     if x==y==z:
+#         return ((x+z+y)*3)
+#     else:
+#         return (x+z+y)
+#
+#
+# print(sum_trice(3,3,3))
+# print(sum_trice(2,4,5))
+
+#19.
+# Write a Python program to get a new string from a given string where "Is" has been added to the front.
+# If the given string already begins with "Is" then return the string unchanged.
+
+#A)
+# string1=input("Type in text:")
+# if "Is" not in string1 :
+#     string2=("Is"+" "+ string1)
+#     print(string2)
+# else :
+#     print(string1)
+    
+# Type in text: Is weather good today?
+# Is weather good today?
+#
+# Type in text:weather good today?
+# Is weather good today?
+
+#B)
+
+# def new_string(str):
+#   if len(str) >= 2 and str[:2] == "Is":
+#     return str
+#   return "Is" + str
+#
+# print(new_string("Array"))
+# print(new_string("Is Empty"))
+
+
