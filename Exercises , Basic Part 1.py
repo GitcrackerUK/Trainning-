@@ -263,5 +263,45 @@ Twinkle, twinkle, little star,
 # print(new_string("Is Empty"))
 
 #20
+# Write a Python program to get a string
+# which is n (non-negative integer) copies of a given string.
 
+#A)
+# u=input("Insert text:")
+# y=int(input("Insert number of coppies:"))
+# print((str(u)+" ")*y)
+
+#B)
+# def copies(str,n):
+#     return(str*n)
 #
+# print(copies("text",4))
+
+#C)
+# def str_copies(str,n):
+#     result=""
+#     for i in range(n):
+#         result=result+str
+#     return result
+# print(str_copies("tato lato",5))
+
+#21
+# Write a Python program to find whether a given number (accept from the user)
+# is even or odd, print out an appropriate message to the user.
+
+#A)
+# z=int(input("Enter a number:"))
+# if z % 2==0:
+#     print(z,"is even. ")
+# else:
+#     print(z,"is odd!!")
+
+#B)
+
+# num = int(input("Enter a number: "))
+# mod = num % 2
+# print(mod)
+# if mod > 0:
+#     print(num,"is an odd number.")
+# else:
+#     print(num,"is an even number.")
