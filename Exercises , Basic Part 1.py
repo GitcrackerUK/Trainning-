@@ -305,3 +305,37 @@ Twinkle, twinkle, little star,
 #     print(num,"is an odd number.")
 # else:
 #     print(num,"is an even number.")
+
+#22
+#Write a Python program to count the number 4 in a given list
+
+#A)
+# list1=[2,3,5,4,6,7,4,4,4,8]
+# list2=[]
+# for i in list1:
+#     if i == 4:
+#         list2.append(i)
+# print(len(list2))
+
+#B)
+
+def count_num_4(list):
+    summary=[]
+    if i in list == 4:
+       summary.append(i)
+    return summary
+
+print(count_num_4(list))
+list1=[2,3,5,4,6,7,4,4,4,8]
+
+
+
+
+        
+
+
+
+
+
+
+
