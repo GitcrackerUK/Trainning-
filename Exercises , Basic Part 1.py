@@ -400,5 +400,38 @@ Twinkle, twinkle, little star,
 #27
 #  Write a Python program to concatenate all elements in a list into a string and return it.
 
+#list1=[1,2,3,4,5,6,7]
+# def concat(list1):
+#     result=''
+#     for i in list1:
+#         result += str(i) #This line is adding i(item) one by one to varible "result".
+#     return result
+# print(concat(list1))
+#
+# #int is not iterable!!!
+numbers = [
+    386, 462, 47, 418, 907, 344, 236, 375, 823, 566, 597, 978, 328, 615, 953, 345,
+    399, 162, 758, 219, 918, 237, 412, 566, 826, 248, 866, 950, 626, 949, 687, 217,
+    815, 67, 104, 58, 512, 24, 892, 894, 767, 553, 81, 379, 843, 831, 445, 742, 717,
+    958,743, 527
+    ]
+
+def even(numbers):
+    evenlist=[]
+    for i in numbers:
+        if i % 2== 0:
+            evenlist.append(i)
+    return evenlist
+print(even(numbers))
+
+
+
+
+
+
+
+
+
+
 
 

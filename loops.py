@@ -88,18 +88,23 @@
 
 
 
-# #while loop
+#while loop
+
 # z= 6
 # x= 0
 # while x < z:
 #     pass
-#
-# #for loop
+
+
+
+# for loop
+
 # for i in x:
 #     pass
-#
-#
-# #if elif else loop
+
+
+# if elif else loop
+
 # z=0
 # if i == i:
 #     pass
@@ -107,10 +112,14 @@
 #     pass
 # else:
 #     pass
+
+
+#
 #
 # # nested loop
 # i=0
-# x=0
+# x=10
+# z=2
 # if i == x:
 #     if i == x:
 #         if i == x:
@@ -176,6 +185,8 @@
 # elif x== 1:
 #     pass
 # else:
-#     pass
+#     print("wwwwww")
+#
+
 
 
