@@ -318,21 +318,23 @@ Twinkle, twinkle, little star,
 # print(len(list2))
 
 #B)
-
-def count_num_4(list):
-    summary=[]
-    if i in list == 4:
-       summary.append(i)
-    return summary
-
-print(count_num_4(list))
 list1=[2,3,5,4,6,7,4,4,4,8]
+def count_num_4(list1):
+    summary=[]
+    for i in list1:
+        if i == 4:
+            summary.append(i)
+    return len(summary)
+
+
+print(count_num_4(list1))
+
+
 
 
 
 
         
-
 
 
 
