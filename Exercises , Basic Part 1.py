@@ -205,7 +205,6 @@ Twinkle, twinkle, little star,
 # def within(x):
 # return((abs(1000-x)<=100) or (abs(2000 - x)<=100))
 
-
 # print(within(400))
 # print(within(1050))
 # print(within(2050))
@@ -229,8 +228,8 @@ Twinkle, twinkle, little star,
 #         return ((x+z+y)*3)
 #     else:
 #         return (x+z+y)
-#
-#
+
+
 # print(sum_trice(3,3,3))
 # print(sum_trice(2,4,5))
 
@@ -248,7 +247,7 @@ Twinkle, twinkle, little star,
     
 # Type in text: Is weather good today?
 # Is weather good today?
-#
+
 # Type in text:weather good today?
 # Is weather good today?
 
@@ -258,7 +257,7 @@ Twinkle, twinkle, little star,
 #   if len(str) >= 2 and str[:2] == "Is":
 #     return str
 #   return "Is" + str
-#
+
 # print(new_string("Array"))
 # print(new_string("Is Empty"))
 
@@ -274,7 +273,7 @@ Twinkle, twinkle, little star,
 #B)
 # def copies(str,n):
 #     return(str*n)
-#
+
 # print(copies("text",4))
 
 #C)
@@ -325,8 +324,8 @@ Twinkle, twinkle, little star,
 #         if i == 4:
 #             summary.append(i)
 #     return len(summary)
-#
-#
+
+
 # print(count_num_4(list1))
 
 #23
@@ -334,15 +333,72 @@ Twinkle, twinkle, little star,
 # Return the n copies of the whole string if the length is less than 2.
 
 
-def substring_copy(str, n):
-    summary=[]
-    if 2 >= len(str):
-        summary=(str*n)
-    if 2 < len(str):
-        summary=(str[:2]*n)
-    return summary
+# def substring_copy(str, n):
+#     summary=[]
+#     if 2 >= len(str):
+#         summary=(str*n)
+#     if 2 < len(str):
+#         summary=(str[:2]*n)
+#     return summary
+
+#print(substring_copy('abcdef', 2))
+# print(substring_copy('p', 3));
+
+
+#24
+# Write a Python program to test whether a passed letter is a vowel or not.
+
+# letter=input("Enter one letter:")
+# if letter == "A" or letter=="E" or letter == "I" or letter == "O" or letter == "U" or letter == "a" or letter == "e" or letter == "i" or letter=="o":
+#     print("Letter",letter,"is a vowel." )
+# else:
+#     print("Letter",letter,"is constant.")
+
+#25
+# Write a Python program to check whether a specified value is contained in a group of values.
+
+# list=[2,3,4,5,6,7,8,9]
+# def value_con(list,x):
+#     if x in list:
+#         return True
+#     else:
+#         return False
+#
+#
+# print(value_con(list,5))
+# print(value_con(list,1))
+# print(value_con([12,3,4,6,8],5))
+
+#26
+# Write a Python program to create a histogram from a given list of integers.
+
+# def histogram(item) :
+#     for i in item:
+#         output =''
+#         while( i > 0):     #creating loop which will run until specified numper will be reduced to 0
+#             output += "*"  #adding * every loop
+#             i = i - 1      #reducing number i by 1
+#             #print(output) # placing print inside while loop resulting printing of all numbers up to specified
+#         print(output)      #placing print at the end of while loop resulting in histogram just of numbers specified
+#     #print(output)         #moving print under for loop result printing out just histogram of last number
+#
+# histogram([5,1,2,1,6,7,8,9])
 
 
 
-print(substring_copy('abcdef', 2))
-print(substring_copy('p', 3));
+# list=[1,2,3,4,5,6,7,8,3,4,5]
+# def histo(x):
+#     for i in x:
+#         out=''
+#         while i > 0:
+#             out += '@'
+#             i = i - 1
+#         print(out)
+# histo(list)
+
+
+#27
+#  Write a Python program to concatenate all elements in a list into a string and return it.
+
+
+
