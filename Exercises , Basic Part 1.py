@@ -307,7 +307,7 @@ Twinkle, twinkle, little star,
 #     print(num,"is an even number.")
 
 #22
-#Write a Python program to count the number 4 in a given list
+# Write a Python program to count the number 4 in a given list
 
 #A)
 # list1=[2,3,5,4,6,7,4,4,4,8]
@@ -318,26 +318,31 @@ Twinkle, twinkle, little star,
 # print(len(list2))
 
 #B)
-list1=[2,3,5,4,6,7,4,4,4,8]
-def count_num_4(list1):
+# list1=[2,3,5,4,6,7,4,4,4,8]
+# def count_num_4(list1):
+#     summary=[]
+#     for i in list1:
+#         if i == 4:
+#             summary.append(i)
+#     return len(summary)
+#
+#
+# print(count_num_4(list1))
+
+#23
+# Write a Python program to get the n (non-negative integer) copies of the first 2 characters of a given string.
+# Return the n copies of the whole string if the length is less than 2.
+
+
+def substring_copy(str, n):
     summary=[]
-    for i in list1:
-        if i == 4:
-            summary.append(i)
-    return len(summary)
-
-
-print(count_num_4(list1))
-
+    if 2 >= len(str):
+        summary=(str*n)
+    if 2 < len(str):
+        summary=(str[:2]*n)
+    return summary
 
 
 
-
-
-        
-
-
-
-
-
-
+print(substring_copy('abcdef', 2))
+print(substring_copy('p', 3));
