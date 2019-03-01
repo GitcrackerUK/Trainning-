@@ -409,29 +409,276 @@ Twinkle, twinkle, little star,
 # print(concat(list1))
 #
 # #int is not iterable!!!
-numbers = [
-    386, 462, 47, 418, 907, 344, 236, 375, 823, 566, 597, 978, 328, 615, 953, 345,
-    399, 162, 758, 219, 918, 237, 412, 566, 826, 248, 866, 950, 626, 949, 687, 217,
-    815, 67, 104, 58, 512, 24, 892, 894, 767, 553, 81, 379, 843, 831, 445, 742, 717,
-    958,743, 527
-    ]
-
-def even(numbers):
-    evenlist=[]
-    for i in numbers:
-        if i % 2== 0:
-            evenlist.append(i)
-    return evenlist
-print(even(numbers))
 
 
+#28
+
+# Write a Python program to print all even numbers from a given numbers list in the same order and stop the printing
+# if any numbers that come after 237 in the sequence.
+
+
+# numbers = [
+#     386, 462, 47, 418, 907, 344, 236, 375, 823, 566, 597, 978, 328, 615, 953, 345,
+#     399, 162, 758, 219, 918, 237, 412, 566, 826, 248, 866, 950, 626, 949, 687, 217,
+#     815, 67, 104, 58, 512, 24, 892, 894, 767, 553, 81, 379, 843, 831, 445, 742, 717,
+#     958,743, 527
+#     ]
+
+# A)
+#  def even(numbers):
+#      evenlist=[]
+#      for i in numbers: #creating loop to iterate over list "numbers"
+#          if i == 237: #checking if i is int 237
+#              break    # breaking a loop if i is int 237
+#          if i % 2== 0 :
+#              evenlist.append(i)
+#      return evenlist
+#  print(even(numbers))
+
+
+# B)
+#  for x in numbers:
+#      if x == 237:
+#          print(x)
+#          break;
+#      elif x % 2 == 0:
+#          print(x)
+
+#29
+
+# color_list_1 = (["White", "Black", "Red"])
+# color_list_2 = (["Red", "Green"])
+#
+# """print(set(color_list_1).intersection(set(color_list_2)))""" # this is way to extract same items from lists.
+#
+# #print(set(color_list_1)-(set(color_list_2))) #To extract only unic item without duplcates in a list need be used set
+#
+#
+# x=[2,3,4,4,4,4,43,2,34,4,5,7,5444,5,4,3,3,222,3,5444]
+# y=[3,4,3,2,3,4,5,6,7,7,6,5,4,34,7]
+# print(set(x))
+#
+# # x=("w","w","e","e","w","w","e","w","w",)
+# # print(x)
+#
+# print((set(x))-(set(y)))
+
+#30
+
+# def triangle_area(base,height):
+#     area=base*height/2
+#     return area
+#
+# print(triangle_area(5,10))
+
+#31 !!!
+
+
+# def gcd(a,b):
+#     c = 1
+#     a,b = max(a,b),min(a,b)
+#     while c != 0:
+#         c = a%b
+#         a,b = b,c
+#     return a
+# print(gcd(270,300))
+
+#32 !!!
+
+# Write a Python program to get the least common multiple (LCM) of two positive integers
+
+# def lcm(x, y):
+#    if x > y:
+#        z = x
+#    else:
+#        z = y
+#
+#    while(True):
+#        if((z % x == 0) and (z % y == 0)):
+#            lcm = z
+#            break
+#        z += 1
+#
+#    return lcm
+# print(lcm(4, 6))
+# print(lcm(15, 17))
+
+
+# def lcm(a):
+#     if a % 2== 0:
+#         a=a/2
+#         if a % 2==0:
+#             a=a/2
+#     if a % 3==0:
+#         a=a/3
+#     if a % 4==0:
+#         a=a/4
+#     if a % 5==0:
+#         a=a/5
+#     if a % 6==0:
+#         a=a/6
+#     if a % 7==0:
+#         a=a/7
+#     if a % 8==0:
+#         a=a/8
+#     if a % 9==0:
+#         a=a/9
+#     if a % 10==0:
+#         a=a/10
+#     return int(a)
+
+# 33.
+#  Write a Python program to sum of three given integers. However, if
+#     two values are equal sum will be zero.
+
+# def summary(x,z,y):
+#     if x==z or z==y:
+#         return 0
+#     else:
+#         return x+z+y
+#
+# print(summary(3,4,5))
+# print(summary(2,2,3))
+# print(summary(2,3,3))
+
+# 34
+# Write a Python program to sum of two given integers.
+# However, if the sum is between 15 to 20 it will return 20.
+
+# def sum_two_except_bt_15_20(z,x):
+#     y=z+x
+#     if y >= 15 and y <= 20:
+#         return 20
+#     else:
+#         return y
+#
+# print(sum_two_except_bt_15_20(7,7))
+# print(sum_two_except_bt_15_20(7,8))
+# print(sum_two_except_bt_15_20(9,7))
+# print(sum_two_except_bt_15_20(13,9))
+
+# 35
+# Write a Python program that will return true
+# if the two given integer values are equal or their sum or difference is
+
+# def equal(a,z):
+#     if a == z or a+z==5 or a-z==5:
+#         return True
+#     else:
+#         return False
+#
+# print(equal(2,5))
+# print(equal(2,3))
+# print(equal(10,5))
+# print(equal(9,5))
+
+#36
+#Write a Python program to add two objects if both objects are an integer type.
+
+#A)
+# def add_int(a,b):
+#     if a is int(a) and b is int(b):
+#         return a + b
+#     else:
+#         return "One or both of inputs are not integers!!"
+#
+# print(add_int(3,5))
+# print(add_int(13,5))
+# print(add_int(3.0,5.0))
+# print(add_int(3.,5.0))
+# print(add_int(3.,55))
+
+#B)
+# def sum_variable(a,b):
+#     if not (isinstance(a,int)and isinstance(b,int)):
+#         return "Input it's not a variable!!"
+#     return a + b
+#
+# print(sum_variable(4,4))
+# print(sum_variable(4,4.0))
+
+#37
+# Write a Python program to display your details like
+# name, age, address in three different lines.
+
+
+
+# def personal_info():
+#     name, age="Pawel",33
+#     adress="4 Bounty Nash Court, Coronation Square"
+#     return("name:{}\nage:{}\nadress:{}".format(name,age,adress)) # Calling dictionary by name and in specific format
+#
+# print(personal_info())
+
+
+# #del dict['Name']  remove entry with key 'Name'
+# dict.clear()       remove all entries in dict
+# del dict           delete entire dictionary
+
+#38
+#Write a Python program to solve (x + y) * (x + y).
+
+# def solve(x,y):
+#     result = (x+y)*(x+y)
+#     return ("({}+{})^2)={}".format(x,y,result)) # Calling result in specific format.
+#
+# def solve2(x,y):
+#     return(x+y)**2
+#
+# print(solve(3,7))
+# print(solve2(4,3))
+# print(solve2(12,4))
+
+#39  !!!!!!!!!!!!!!!!!!!
+# Write a Python program to compute the future value
+# of a specified principal amount, rate of interest, and a number of years.
+# amt=10000
+# int=3.5
+# y=7
+# def apr_calc(amt,int,y):
+#     intr=((1+(0.01*int)) ** y)
+#     return round(amt*intr)
+#
+# print(apr_calc(amt,int,y))
+#
+#
+# def calc(amt,int,y):
+#     for i in range(y):
+#         amt += amt*0.035
+#     return(amt)
+# print(calc(amt,int,y))
+
+#40
+#Write a Python program to compute the distance
+# between the points (x1, y1) and (x2, y2)
 
 
 
 
+#41
+#Write a Python program to check whether a file exists.
 
+import os
 
+# print(os.path.isfile('./Exercises , Basic Part 1.py'))  # True
+# print(os.path.isfile('file.txt'))    # False
+# print(os.path.isfile('./link.txt'))  # False
+# print(os.path.isfile('./fake.txt'))  # False
+# print(os.path.isfile('./dir')    )   # False
+# print(os.path.isfile('./sym')    )   # False
 
+#42
+#Write a Python program to determine if a Python
+# shell is executing in 32bit or 64bit mode on OS.
 
+# import struct
+# print(struct.calcsize("P")*8)
+#
+# import platform
+# print(platform.architecture()[0])
+#
+# import sys
+# print(sys.maxsize > 2**32)  # it should display True in case of 64bit and False in case of 32bit
 
-
+#43
+#
