@@ -559,7 +559,7 @@ Twinkle, twinkle, little star,
 
 # 35
 # Write a Python program that will return true
-# if the two given integer values are equal or their sum or difference is
+# if the two given integer values are equal or their sum or difference is 5
 
 # def equal(a,z):
 #     if a == z or a+z==5 or a-z==5:
@@ -658,17 +658,17 @@ Twinkle, twinkle, little star,
 #41
 #Write a Python program to check whether a file exists.
 
-import os
+#import os
 
 # print(os.path.isfile('./Exercises , Basic Part 1.py'))  # True
 # print(os.path.isfile('file.txt'))    # False
 # print(os.path.isfile('./link.txt'))  # False
 # print(os.path.isfile('./fake.txt'))  # False
 # print(os.path.isfile('./dir')    )   # False
-# print(os.path.isfile('./sym')    )   # False
+#print(os.path.isfile('./pam_environment')    )   # False
 
 #42
-#Write a Python program to determine if a Python
+# Write a Python program to determine if a Python
 # shell is executing in 32bit or 64bit mode on OS.
 
 # import struct
@@ -681,4 +681,19 @@ import os
 # print(sys.maxsize > 2**32)  # it should display True in case of 64bit and False in case of 32bit
 
 #43
+# Write a Python program to get OS name, platform and release information.
+
+# import os,platform
 #
+#
+# print(os.name)
+# print(platform.system())
+# print(platform.release())
+
+#44
+# Write a Python program to locate Python site-packages.
+
+#import site
+#print(site.getsitepackages())
+
+

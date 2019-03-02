@@ -17,3 +17,4 @@
 
 """touch (file name)""" #creates ne file via terminal
 """rm (file name)"""     # removes file from dir
+""" whereis python3.7""" #comand to locate files/programs
