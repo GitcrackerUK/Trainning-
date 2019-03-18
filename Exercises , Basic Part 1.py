@@ -693,7 +693,50 @@ Twinkle, twinkle, little star,
 #44
 # Write a Python program to locate Python site-packages.
 
-#import site
-#print(site.getsitepackages())
+# import site
+# print(site.getsitepackages())
 
+#45 !!!!!
+
+# Write a python program to call an external command in Python.
+
+# from subprocess import call
+#
+# call(["ls", "-l"])
+
+#46
+
+# Write a python program to get the path and name of the file that is currently executing.
+# import os
+# print(os.path.abspath(__file__))
+
+#47
+
+# Write a Python program to find out the number of CPUs using
+
+# import multiprocessing
+# print(multiprocessing.cpu_count())
+
+#48
+
+# Write a Python program to parse a string to Float or Integer.
+
+# a=123
+# a=float(a)
+# print(a)
+# a=int(a)
+# print(a)
+
+#49
+
+#Write a Python program to list all files in a directory in Python
+
+# from os import listdir
+# from os.path import isfile, join
+# import os
+# print(os.path.abspath(__file__))
+# fl=[f for f in listdir("/home/gitcracker") if isfile(join("/home/gitcracker", f))]
+# print(fl)
+
+#50
 
