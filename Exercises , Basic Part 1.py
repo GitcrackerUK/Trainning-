@@ -738,5 +738,179 @@ Twinkle, twinkle, little star,
 # fl=[f for f in listdir("/home/gitcracker") if isfile(join("/home/gitcracker", f))]
 # print(fl)
 
-#50
+#50 Write a Python program to print without newline or space
 
+# for i in range(0,10):
+#     print("*",end="")
+# print("\n")
+
+#51 Write a Python program to determine profiling of Python programs.
+
+# import cProfile
+#
+# def sum():
+#     a="abcdde"
+#     b="absdss"
+#     print(  a,"\n",b)
+# cProfile.run("sum()")
+
+#52 Write a Python program to print to stderr !!!
+
+
+#53 Write a python program to access environment variables !!!
+
+# import os
+# print(os.environ)
+
+#54 Write a Python program to get the current username
+
+# import getpass
+# print(getpass.getuser())
+
+#55 Write a Python to find local IP addresses using Python's stdlib
+
+#1
+# import socket
+# print(socket.gethostbyname(socket.gethostname()))
+
+#2
+# print([l for l in ([ip for ip in socket.gethostbyname_ex(socket.gethostname())[2]
+# if not ip.startswith("127.")][:1], [[(s.connect(('8.8.8.8', 53)),
+# s.getsockname()[0], s.close()) for s in [socket.socket(socket.AF_INET,
+# socket.SOCK_DGRAM)]][0][1]]) if l][0][0])
+
+#56 Write a Python program to get height and the width of console window.
+
+# #!/usr/bin/env python
+# import os
+# import shlex
+# import struct
+# import platform
+# import subprocess
+#
+#
+# def get_terminal_size():
+#     """ getTerminalSize()
+#      - get width and height of console
+#      - works on linux,os x,windows,cygwin(windows)
+#      originally retrieved from:
+#      http://stackoverflow.com/questions/566746/how-to-get-console-window-width-in-python
+#     """
+#     current_os = platform.system()
+#     tuple_xy = None
+#     if current_os == 'Windows':
+#         tuple_xy = _get_terminal_size_windows()
+#         if tuple_xy is None:
+#             tuple_xy = _get_terminal_size_tput()
+#             # needed for window's python in cygwin's xterm!
+#     if current_os in ['Linux', 'Darwin'] or current_os.startswith('CYGWIN'):
+#         tuple_xy = _get_terminal_size_linux()
+#     if tuple_xy is None:
+#         print
+#         "default"
+#         tuple_xy = (80, 25)  # default value
+#     return tuple_xy
+#
+#
+#
+#
+#
+# def _get_terminal_size_tput():
+#     # get terminal width
+#     # src: http://stackoverflow.com/questions/263890/how-do-i-find-the-width-height-of-a-terminal-window
+#     try:
+#         cols = int(subprocess.check_call(shlex.split('tput cols')))
+#         rows = int(subprocess.check_call(shlex.split('tput lines')))
+#         return (cols, rows)
+#     except:
+#         pass
+#
+#
+# def _get_terminal_size_linux():
+#     def ioctl_GWINSZ(fd):
+#         try:
+#             import fcntl
+#             import termios
+#             cr = struct.unpack('hh',
+#                                fcntl.ioctl(fd, termios.TIOCGWINSZ, '1234'))
+#             return cr
+#         except:
+#             pass
+#
+#     cr = ioctl_GWINSZ(0) or ioctl_GWINSZ(1) or ioctl_GWINSZ(2)
+#     if not cr:
+#         try:
+#             fd = os.open(os.ctermid(), os.O_RDONLY)
+#             cr = ioctl_GWINSZ(fd)
+#             os.close(fd)
+#         except:
+#             pass
+#     if not cr:
+#         try:
+#             cr = (os.environ['LINES'], os.environ['COLUMNS'])
+#         except:
+#             return None
+#     return int(cr[1]), int(cr[0])
+#
+#
+# if __name__ == "__main__":
+#     sizex, sizey = get_terminal_size()
+#     print('width =', sizex, 'height =', sizey)
+
+#57 Write a Python program to get execution time for a Python method
+
+# import time
+# start_time = time.time()
+# get_terminal_size()
+# print("--- %s seconds ---" % (time.time() - start_time))
+# print(time.clock() - start_time, "seconds")
+
+
+# def sum_of_n_numbers(n):
+#     start_time = time.time()
+#     s = 0
+#     for i in range(1,n+1):
+#         s = s + i
+#     end_time = time.time()
+#     return s,end_time-start_time
+
+# n = 5
+# print("\nTime to sum of 1 to ",n," and required time to calculate is :",sum_of_n_numbers(n))
+
+#58 Write a python program to sum of the first n positive integers.
+
+# n=input("enter a number:")
+# def sum_num(n):
+#     n=int(n)
+#     res=(n*(n+1)/2)
+#     return res
+#
+# print(sum_num(n))
+
+#59 Write a Python program to convert height (in feet and inches) to centimeters.
+
+# #1
+# def converter(feet,inch):
+#     hcm=(feet*30.48)+(inch*2.54)
+#     print("Your hight is: %d cm" %round(hcm))
+# converter(10,10)
+#
+# #2
+# h_inch=int(input("Feet:"))
+# h_ft=int(input("Inches:"))
+# h_inch += h_ft * 12
+#
+# h_cm = h_inch * 2.54
+# print("Your hight is: %d cm" %h_cm)
+
+#60. Write a Python program to calculate the hypotenuse of a right angled triangle.
+
+# from math import sqrt
+# a=3
+# b=4
+# def calculate_hypo(a,b):
+#     c=int(sqrt(a**2+b**2))
+#     print(c)
+# calculate_hypo(a,b)
+
+#61. Write a Python program to convert the distance (in feet) to inches, yards, and miles.
