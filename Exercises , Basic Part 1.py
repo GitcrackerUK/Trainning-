@@ -914,3 +914,65 @@ Twinkle, twinkle, little star,
 # calculate_hypo(a,b)
 
 #61. Write a Python program to convert the distance (in feet) to inches, yards, and miles.
+
+# def converter(feet):
+#     inch=feet*12
+#     yards=feet/3
+#     miles=feet/5280.0
+#     print(feet,"feet is:",inch,"inches")
+#     print(feet,"feet is: %.2f" %yards,"yards")
+#     print(feet,"feet is: %.2f" %miles,"miles")
+#
+# converter(100)
+
+#62. Write a Python program to convert all units of time into seconds
+
+#1
+
+# def time_converter():
+#     second=1
+#     minutes=second*60
+#     hour=minutes*60
+#     day=hour*24
+#     week=day*7
+#     month=week*4
+#     year=month*12
+#     decade=year*10
+#     century=decade*10
+#     print("One minute  is:",minutes,"seconds")
+#     print("One hour    is:",hour,"seconds")
+#     print("One day     is:",day,"seconds")
+#     print("One week    is:",week,"seconds")
+#     print("One month   is:",month,"seconds")
+#     print("One year    is:",year,"seconds")
+#     print("One decade  is:",decade,"seconds")
+#     print("One century is:" ,century,"seconds")
+# time_converter()
+
+#2
+
+# days = int(input("Enter days:"))*3600*24
+# hours = int(input("Enter hours:"))*3600
+# minutes = int(input("Enter minutes:"))*60
+# seconds = int(input("Enter seconds:"))
+#
+# result = days + hours + minutes + seconds
+# print("Result of input is:",result,"seconds")
+
+
+
+
+
+
+                                       
+
+
+
+
+
+
+
+
+
+
+
