@@ -955,10 +955,14 @@ Twinkle, twinkle, little star,
 # hours = int(input("Enter hours:"))*3600
 # minutes = int(input("Enter minutes:"))*60
 # seconds = int(input("Enter seconds:"))
-#
+
 # result = days + hours + minutes + seconds
 # print("Result of input is:",result,"seconds")
 
+#63. Write a Python program to get an absolute file path.
+
+# import os
+# print(os.path.abspath("This project"))
 
 
 
