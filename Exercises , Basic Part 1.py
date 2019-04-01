@@ -974,9 +974,9 @@ Twinkle, twinkle, little star,
 #
 # print(timestampm)
 # timem=datetime.fromtimestamp(timestampm).strftime("%Y-%m-%d %H:%M:%S")
-# timec=datetime.fromtimestamp(timestampm).strftime("%Y-%m-%d %H:%M:%S")
+#
 # print(timem)
-# print(timec)
+#
 
 # import os.path,time
 # from datetime import datetime
