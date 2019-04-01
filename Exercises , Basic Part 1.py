@@ -964,11 +964,60 @@ Twinkle, twinkle, little star,
 # import os
 # print(os.path.abspath("This project"))
 
+# 64. Write a Python program to get file creation and modification date/times.
+
+# import os
+# from _datetime import datetime
+# timestampm = os.path.getmtime("loops.py")
+# timestampc = os.stat("loops.py").st_ctime
+# #print(os.path.abspath("loops.py"))
+#
+# print(timestampm)
+# timem=datetime.fromtimestamp(timestampm).strftime("%Y-%m-%d %H:%M:%S")
+# timec=datetime.fromtimestamp(timestampm).strftime("%Y-%m-%d %H:%M:%S")
+# print(timem)
+# print(timec)
+
+# import os.path,time
+# from datetime import datetime
+#
+# modtime= time.ctime(os.path.getmtime("Exercises , Basic Part 1.py"))
+# creatimestamp= os.path.getctime("Exercises , Basic Part 1.py")
+# creatime=datetime.fromtimestamp(creatimestamp).strftime("%Y-%m-%d %H:%M:%S")
+# print("Modified on:",modtime)
+# print("Created  on:",creatime)
+
+#65. Write a Python program to convert seconds to
+#    day, hour, minutes and seconds.
+
+#1 from timestamp
+# from _datetime import datetime
+#
+# def converter(seconds):
+#        result=datetime.fromtimestamp(seconds).strftime("%d:%H:%M:%S")
+#        print(result)
+#
+# converter(1554110572.9297512)
+#
+#2 from input
+
+time=int(input("Enter seconds:"))
+def converter(time):
+    day=time//(24*3600)
+    time=time%(24*3600)
+    hour=time//3600
+    time%=3600
+    minute=time//60
+    time%=60
+    seconds=time
+
+    print(time,"seconds it's:",day,"days",hour,"hours",minute,"minutes")
+    print(time,"seconds it's:",round(day),"days",round(hour),"hours",round(minute),"minutes")
+    print("d:h:m:s-> %d:%d:%d:%d" % (day,hour,minute,seconds))
+converter(time)
 
 
 
-
-                                       
 
 
 
