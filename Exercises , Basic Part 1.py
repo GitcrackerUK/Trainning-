@@ -1028,20 +1028,44 @@ Twinkle, twinkle, little star,
 #    pounds per square inch,
 #    a millimeter of mercury (mmHg) and atmosphere pressure.
 
-def presure(kilopaskal):
-    ppsi=kilopaskal*0.145037738
-    mmHg=kilopaskal*7.50061683
-    APresure=kilopaskal*0.00986923267
-    print(kilopaskal,"kilopaskal converted to:\n")
-    print("ppsi",ppsi,"\nmmHa",mmHg,"\nApresure",APresure)
+#1
+# def pressure(kilopascal):
+#
+#     psi=kilopascal*0.1450377377
+#     mmHg=kilopascal*7.50062
+#     Atm=kilopascal*0.0098692329
+#     print(kilopascal,"kilopascals converted:")
+#     print("is:%.2f psi"%psi)
+#     print("is:%.2f mmHg"%mmHg)
+#     print("is:%.2f Atm" %Atm)
+#
+# pressure(2)
 
-presure(1)
+#2
+# kpa = float(2)
+# psi = kpa / 6.89475729
+# mmhg = kpa * 760 / 101.325
+# atm = kpa / 101.325
+# print("The pressure in pounds per square inch: %.2f psi"  % (psi))
+# print("The pressure in millimeter of mercury: %.2f mmHg" % (mmhg))
+#print("Atmosphere pressure: %.2f atm." % (atm))
 
+#68. Write a Python program to calculate the sum of the digits in an integer.
 
+# 1
+# x=123456
+# def counter(x):
+#     print(len(str(x)))
+# counter(x)
 
+# 2
+# x=123456
+# import math
+# def counter(x):
+#     count=int(math.log10(x))+1
+#     print(count)
 
-
-
+# counter(x)
 
 
 
