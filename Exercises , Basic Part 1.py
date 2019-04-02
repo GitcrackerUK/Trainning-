@@ -919,11 +919,14 @@ Twinkle, twinkle, little star,
 #     inch=feet*12
 #     yards=feet/3
 #     miles=feet/5280.0
+#     kilo=miles*1.609344
 #     print(feet,"feet is:",inch,"inches")
+#     print(feet,"feet is:%.2fkm"%kilo)
 #     print(feet,"feet is: %.2f" %yards,"yards")
 #     print(feet,"feet is: %.2f" %miles,"miles")
-#
-# converter(100)
+# converter(19341)
+# kilimanjaro 19341feet
+
 
 #62. Write a Python program to convert all units of time into seconds
 
@@ -1022,7 +1025,7 @@ Twinkle, twinkle, little star,
 # def body_mas_index(hight,weight):
 #     BMI=weight/(hight*hight)
 #     print(round(BMI))
-# body_mas_index(1.84,85)
+# body_mas_index(1.68,63)
     
 #67. Write a Python program to convert pressure in kilopascals to
 #    pounds per square inch,
