@@ -1001,24 +1001,41 @@ Twinkle, twinkle, little star,
 #
 #2 from input
 
-time=int(input("Enter seconds:"))
-def converter(time):
-    day=time//(24*3600)
-    time=time%(24*3600)
-    hour=time//3600
-    time%=3600
-    minute=time//60
-    time%=60
-    seconds=time
-
-    print(time,"seconds it's:",day,"days",hour,"hours",minute,"minutes")
-    print(time,"seconds it's:",round(day),"days",round(hour),"hours",round(minute),"minutes")
-    print("d:h:m:s-> %d:%d:%d:%d" % (day,hour,minute,seconds))
-converter(time)
-
-
+# time=int(input("Enter seconds:"))
+# def converter(time):
+#     day=time//(24*3600)
+#     time=time%(24*3600)
+#     hour=time//3600
+#     time%=3600
+#     minute=time//60
+#     time%=60
+#     seconds=time
+#
+#     print(time,"seconds it's:",day,"days",hour,"hours",minute,"minutes")
+#     print(time,"seconds it's:",round(day),"days",round(hour),"hours",round(minute),"minutes")
+#     print("d:h:m:s-> %d:%d:%d:%d" % (day,hour,minute,seconds))
+# converter(time)
 
 
+# #66. Write a Python program to calculate body mass index
+#
+# def body_mas_index(hight,weight):
+#     BMI=weight/(hight*hight)
+#     print(round(BMI))
+# body_mas_index(1.84,85)
+    
+#67. Write a Python program to convert pressure in kilopascals to
+#    pounds per square inch,
+#    a millimeter of mercury (mmHg) and atmosphere pressure.
+
+def presure(kilopaskal):
+    ppsi=kilopaskal*0.145037738
+    mmHg=kilopaskal*7.50061683
+    APresure=kilopaskal*0.00986923267
+    print(kilopaskal,"kilopaskal converted to:\n")
+    print("ppsi",ppsi,"\nmmHa",mmHg,"\nApresure",APresure)
+
+presure(1)
 
 
 
