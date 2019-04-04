@@ -1070,6 +1070,51 @@ Twinkle, twinkle, little star,
 
 # counter(x)
 
+#69. Write a Python program to sort
+#   three integers without using conditional statements and loops.
 
+#1
 
+# a=2
+# b=1
+# c=7
+#
+# def sorter(a,b,c):
+#      h=max(a, max(b,c))
+#      l=max(-a,-max(-b,-c))
+#      m=(a+b+c) - (h+l)
+#      print (l,m,h)
+# sorter(a,b,c)
 
+#2
+# a=int(input("Enter first  random number:"))
+# b=int(input("Enter second random number:"))
+# c=int(input("Enter third random number:"))
+# def sorter2(a,b,c):
+#     high=max(a,max(b,c))
+#     low=min(a,min(b,c))
+#     mid = (a + b + c) - (high + low)
+#     print("blaaaaa")
+#     print("Lowest  number in a list is:%d"%low)
+#     print("Middle  number in a list is:%d"%mid)
+#     print("Highest number in a list is:%d"%high)
+#
+# sorter2(a,b,c)
+
+#3
+
+# a=int(input("Enter first  random number:"))
+# b=int(input("Enter second random number:"))
+# c=int(input("Enter third random number:"))
+#
+# def sorter3(a,b,c):
+#     zulu=[]
+#     zulu.append(a)
+#     zulu.append(b)
+#     zulu.append(c)
+#
+#     print(sorted(zulu))
+#
+# sorter3(a,b,c)
+
+#
