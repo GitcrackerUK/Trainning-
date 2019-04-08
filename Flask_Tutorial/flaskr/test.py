@@ -1,11 +1,6 @@
 from flask import Flask
-import flask
-
-print(flask.__version__)
-
-
 app = Flask(__name__)
 
 @app.route('/')
-def hello():
+def hello_world():
     return 'Hello, World!'

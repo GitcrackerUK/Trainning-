@@ -1078,10 +1078,10 @@ Twinkle, twinkle, little star,
 # a=2
 # b=1
 # c=7
-#
+# #
 # def sorter(a,b,c):
 #      h=max(a, max(b,c))
-#      l=max(-a,-max(-b,-c))
+#      l=-max(-a,max(-b,-c))
 #      m=(a+b+c) - (h+l)
 #      print (l,m,h)
 # sorter(a,b,c)
@@ -1117,4 +1117,44 @@ Twinkle, twinkle, little star,
 #
 # sorter3(a,b,c)
 
-#
+#70. Write a Python program to sort files by date.
+
+import glob
+import os
+
+
+files=glob.glob("*.txt")
+files.sort(key=os.path.getmtime)
+print("\n".join(files))
+
+
+#71. Write a Python program to get a directory listing, sorted by creation date.!!!!!!
+
+
+from stat import S_ISREG, ST_CTIME, ST_MODE
+import os, sys, time
+
+#Relative or absolute path to the directory
+dir_path = sys.argv[1] if len(sys.argv) == 2 else r'.'
+
+#all entries in the directory w/ stats
+data = (os.path.join(dir_path, fn) for fn in os.listdir(dir_path))
+data = ((os.stat(path), path) for path in data)
+
+# regular files, insert creation date
+data = ((stat[ST_CTIME], path)
+           for stat, path in data if S_ISREG(stat[ST_MODE]))
+
+for cdate, path in sorted(data):
+    print(time.ctime(cdate), os.path.basename(path))
+
+
+#72. Write a Python program to get the details of math module.
+
+# import math
+# print("\n".join(dir(math)))
+
+#73. Write a Python program to calculate midpoints of a line.
+
+
+
