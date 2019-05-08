@@ -1119,34 +1119,34 @@ Twinkle, twinkle, little star,
 
 #70. Write a Python program to sort files by date.
 
-import glob
-import os
-
-
-files=glob.glob("*.txt")
-files.sort(key=os.path.getmtime)
-print("\n".join(files))
+# import glob
+# import os
+#
+#
+# files=glob.glob("*.txt")
+# files.sort(key=os.path.getmtime)
+# print("\n".join(files))
 
 
 #71. Write a Python program to get a directory listing, sorted by creation date.!!!!!!
 
 
-from stat import S_ISREG, ST_CTIME, ST_MODE
-import os, sys, time
-
-#Relative or absolute path to the directory
-dir_path = sys.argv[1] if len(sys.argv) == 2 else r'.'
-
-#all entries in the directory w/ stats
-data = (os.path.join(dir_path, fn) for fn in os.listdir(dir_path))
-data = ((os.stat(path), path) for path in data)
-
-# regular files, insert creation date
-data = ((stat[ST_CTIME], path)
-           for stat, path in data if S_ISREG(stat[ST_MODE]))
-
-for cdate, path in sorted(data):
-    print(time.ctime(cdate), os.path.basename(path))
+# from stat import S_ISREG, ST_CTIME, ST_MODE
+# import os, sys, time
+#
+# #Relative or absolute path to the directory
+# dir_path = sys.argv[1] if len(sys.argv) == 2 else r'.'
+#
+# #all entries in the directory w/ stats
+# data = (os.path.join(dir_path, fn) for fn in os.listdir(dir_path))
+# data = ((os.stat(path), path) for path in data)
+#
+# # regular files, insert creation date
+# data = ((stat[ST_CTIME], path)
+#            for stat, path in data if S_ISREG(stat[ST_MODE]))
+#
+# for cdate, path in sorted(data):
+#     print(time.ctime(cdate), os.path.basename(path))
 
 
 #72. Write a Python program to get the details of math module.
@@ -1156,5 +1156,358 @@ for cdate, path in sorted(data):
 
 #73. Write a Python program to calculate midpoints of a line.
 
+
+# def mid_point(xa,xb,ya,yb):
+#
+#     M=(xa+xb)/2,(ya+yb)/2
+#     print (M)
+#
+# mid_point(-3,8,5,-1)
+
+
+#74 Write a Python program to hash a word.
+# import base64
+#
+#
+# base64.encodestring('peterbengtsson')
+
+# 75. Write a Python program to get the copyright information.
+# import sys
+# print("\nPython Copyright Information")
+# print(sys.copyright)
+# print()
+
+# 76. Write a Python program to get the command-line arguments
+# (name of the script, the number of arguments, arguments) passed to a script
+
+# import sys
+#
+# print("This is name of the script",sys.argv[0])
+# print("This is number of arguments",len(sys.argv))
+# print("The arguments are: " , str(sys.argv))
+
+
+
+# 77. Write a Python program to test whether the system is a big-endian platform or little-endian platform.
+
+
+# import sys
+# print(sys.byteorder)
+
+# 78 Write a Python program to find the available built-in modules.
+
+# print("\n".join(dir(__builtins__)))
+
+#79. Write a Python program to get the size of an object in bytes
+
+#
+# tb=int(input("Enter TB:"))
+# gb=int(input("Enter GB:"))
+# mb=int(input("Enter MB:"))
+# b=int(input("Enter B:"))
+#
+# def object_byter(tb,gb,mb,b):
+#     tb=tb*1099511627776
+#     gb=(gb*1073741824)+tb
+#     mb=(mb*1024)+gb
+#     b=b+mb
+#     print("Input converted:%d"%b)
+# object_byter(tb,gb,mb,b)
+#
+
+# byte=1
+# kilobyte=byte*1024
+# megabyte=kilobyte*1024
+# gigabyte=megabyte*1024
+# terabyte=gigabyte*1024
+#
+# print(terabyte)
+
+
+#79
+
+# import sys
+# x="pavulon"
+# print(sys.getsizeof(x))
+#
+#
+# fiirst="first"
+# second="second"
+# third="third"
+#
+# print("The size of '"+fiirst+"'= "+str(sys.getsizeof(fiirst))+"bytes")
+# print("The size of '"+second+"'="+str(sys.getsizeof(second))+"bytes")
+# print("The size of '"+third+ "'= "+str(sys.getsizeof(third))+ "bytes")
+
+#80. Write a Python program to get the current value of the recursion limit.
+# import sys
+# print(sys.getrecursionlimit())
+#
+# sys.setrecursionlimit(1500) #changing recuretion limit
+# print(sys.getrecursionlimit())
+
+#81. Write a Python program to concatenate N strings.
+
+# z="aaaaaaa"
+# x="bbbbbbb"
+# y=["aaaa","wwwww","QQQQQQ"]
+#
+# print(z+x)
+# print("".join(y))
+#
+# y=("".join(y))
+# print("all letters are:"+y)
+
+# def concatenate(x):
+    #print("".join(x))
+
+# concatenate(y)
+
+#82. Write a Python program to calculate the sum over a container.
+
+
+# q=([10,20,30])
+#
+# def sum_container(x):
+#     print(sum(x))
+#
+# sum_container(q)
+
+#83. Write a Python program to test whether all numbers of a list is greater than a certain number.
+#
+# list=[1,2,3,4,5,6,7,8,99,0,]
+# list1=[6,7,8,99,]
+# num=5
+
+# for i in list:
+#     if num < i:
+#         print("%d is smaller than list" %num)
+#     else:
+#         print("%d is bigger than some numbers in the list" %num)
+#
+
+# print(all(x >num for x in list1))
+
+
+# print(all(x <num for x in list))
+
+#84. Write a Python program to count the number occurrence of a specific character in a string.
+
+# st="acnjscnsnowmowmmcpdcd"
+# x="n"
+# print(st.count(x))
+# print(st.count("n"))
+
+#85. Write a Python program to check if a file path is a file or a directory.
+# import os
+# if os.path.isfile('/usr/bin'):
+#     print("It's file ")
+# else:
+#     print("It's directory")
+#
+#
+#
+#
+# print(os.path.isfile("profileimage.jpeg"))
+# print(os.path.isdir("/usr/bin"))
+# print(os.path.isdir("Documents"))
+#
+# import os
+# path="abc.txt"
+# if os.path.isdir('/usr/bin'):
+#     print("\nIt is a directory")
+# elif os.path.isfile('/usr/bin'):
+#     print("\nIt is a normal file")
+# else:
+#     print("It is a special file (socket, FIFO, device file)" )
+# print()
+
+
+#current file path
+# import os
+# print(os.path.abspath(__file__) )
+# print(os.path.abspath("profileimage.jpeg") )
+#
+# print(os.path.realpath(__file__))
+#
+# #absolute path
+#
+# from pathlib import Path
+#
+# print(Path("profileimage.jpeg").resolve())
+# print(Path("python3.6").resolve())
+# print(Path("python3.6").resolve()
+
+# 86. Write a Python program to get the ASCII value of a character.
+
+# print(ord("w"))
+# print(ord("W"))
+
+#87. Write a Python program to get the size of a file.
+
+# import os
+# x=(os.path.getsize('/usr/bin'))
+# print('%dB'%x)
+
+
+#88. Given variables x=30 and y=20, write a Python program to print t "30+20=50"
+
+# x=30
+# y=20
+#
+# print("30+20=%d"%(x+y))
+# print("%d+%d=%d" %(x,y,x+y))
+
+#89. Write a Python program to perform an action if a condition is true.
+
+# x=1
+#
+# if x == 1:
+#     print("\nFirst day of a Month!")
+# else:
+#     pass
+
+#90. Write a Python program to create a copy of its own source code.
+
+
+# print((lambda str='print(lambda str=%r: (str %% str))()': (str % str))())
+# print( open(__file__).read())
+
+# 91. Write a Python program to create a copy of its own source code.
+
+#1
+
+# z=500
+# x=200
+# #1
+# z=z+x #700
+# x=z-x #500
+# z=z-x #200
+# print(z)
+# print(x)
+
+#2
+
+# print("\nBefore swap x=%d, and z=%d"%(x,z))
+# z,x=x,z
+# print("\nAfter  swap x=%d, and z=%d"%(x,z))
+
+# 92. Write a Python program to define a string
+# containing special characters in various forms.
+
+
+# print("/"'![]{}'"$%^&*()")
+# print(r"""$"'\n'"@~#""")
+# print(r'"\"/^&*()"|"\$/')
+
+
+#93. Write a Python program to get the identity of an object
+# x=['slow','fast','medium']
+# print(id(x))
+#
+# adress=id(x)
+# print(adress)
+
+#94. Write a Python program to convert a byte string to a list of integers.
+
+# decode_into_str=b''.decode('utf-8')
+#
+#
+# code = bytes([231, 131])
+# code       # b'\xe7\x83'
+# type(code) # <class 'bytes'>
+# list(code) # [231, 131]
+#
+# string ="Write a Python program to convert a byte string to a list of integers."
+# byt=list(bytes(string,'utf-8'))
+# print(*byt ,sep = "\n")
+
+# 95. Write a Python program to check if a string is numeric.
+
+# def check_list(x):
+#     try:
+#         float(x)
+#         print (True)
+#     except ValueError:
+#         print(False)
+# x="wlaskksaa"
+# x="wteuu3444l"
+# x="3444"
+
+# check_list(x)
+
+# 96. Write a Python program to print the current call stack.
+# import traceback
+# def f1():
+#     return abc()
+# def abc():
+#     traceback.print_stack()
+# f1()
+# print()
+#
+# PycharmProjects/Training-session
+
+
+# import os
+# print(os.path.abspath(__file__) )
+
+#97. Write a Python program to list the special variables used within the language.
+
+# s_var_names = sorted((set(globals().keys()) | set(__builtins__.__dict__.keys())) - set('_ names i'.split()))
+# print()
+# print( '\n'.join(','.join(s_var_names[i:i+8]) for i in range(0, len(s_var_names), 8)) )
+# print()
+
+# error=[ArithmeticError,AssertionError,AttributeError,BaseException,BlockingIOError,BrokenPipeError,BufferError,BytesWarning
+# ChildProcessError,ConnectionAbortedError,ConnectionError,ConnectionRefusedError,ConnectionResetError,DeprecationWarning,EOFError,Ellipsis
+# EnvironmentError,Exception,False,FileExistsError,FileNotFoundError,FloatingPointError,FutureWarning,GeneratorExit
+# IOError,ImportError,ImportWarning,IndentationError,IndexError,InterruptedError,IsADirectoryError,KeyError
+# KeyboardInterrupt,LookupError,MemoryError,ModuleNotFoundError,NameError,None,NotADirectoryError,NotImplemented
+# NotImplementedError,OSError,OverflowError,PendingDeprecationWarning,PermissionError,ProcessLookupError,RecursionError,ReferenceError
+# ResourceWarning,RuntimeError,RuntimeWarning,StopAsyncIteration,StopIteration,SyntaxError,SyntaxWarning,SystemError
+# SystemExit,TabError,TimeoutError,True,TypeError,UnboundLocalError,UnicodeDecodeError,UnicodeEncodeError
+# UnicodeError,UnicodeTranslateError,UnicodeWarning,UserWarning,ValueError,Warning,ZeroDivisionError]
+#
+# special1=[__annotations__,
+# __build_class__,__builtins__,__cached__,__debug__,__doc__,__file__,__import__,__loader__
+# __name__,__package__,__spec__]
+#
+# special2=[abs,all,any,ascii,bin
+# bool,bytearray,bytes,callable,chr,classmethod,compile,complex,
+# copyright,credits,delattr,dict,dir,divmod,enumerate,eval,
+# exec,exit,filter,float,format,frozenset,getattr,globals,
+# hasattr,hash,help,hex,id,input,int,isinstance,
+# issubclass,iter,len,license,list,locals,map,max,
+# memoryview,min,next,object,oct,open,ord,pow,
+# print,property,quit,range,repr,reversed,round,set,
+# setattr,slice,sorted,staticmethod,str,sum,super,tuple]
+
+#98. Write a Python program to get the system time.
+
+#1 import time
+#print(time.ctime())
+
+#2
+#import datetime
+#print(datetime.datetime.now().time())
+
+#99. Write a Python program to clear the screen or terminal.
+import os
+import time
+os.system("clear")
+def wind_cleare():
+    os.system("cls")
+    return
+#
+# import os
+# import time
+# # for windows
+# # os.system('cls')
+# os.system("ls")
+# time.sleep(2)
+# # Ubuntu version 10.10
+# os.system('clear')
+
+print(os.path.abspath("PycharmProjects/Training-session/Exercises , Basic Part 1.py"))
 
 
