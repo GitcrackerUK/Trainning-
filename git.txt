@@ -1,4 +1,4 @@
-git commit-
+git commit- creating coppy of changed file
 git checkout-
 git merge-
 git status-
