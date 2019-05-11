@@ -1494,10 +1494,14 @@ Twinkle, twinkle, little star,
 #99. Write a Python program to clear the screen or terminal.
 import os
 import time
+
 os.system("clear")
+
 def wind_cleare():
-    os.system("cls")
-    return
+    return  os.system("clear")
+def wind_cleare1():
+    return os.system("cls")
+
 #
 # import os
 # import time
@@ -1510,4 +1514,5 @@ def wind_cleare():
 
 print(os.path.abspath("PycharmProjects/Training-session/Exercises , Basic Part 1.py"))
 
+#100. Write a Python program to get the name of the host on which the routine is running.
 
