@@ -1,0 +1,9 @@
+git commit-
+git checkout-
+git merge-
+git status-
+git log-
+git push-
+
+
+git checkout -b bugFix ;git commit
