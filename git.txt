@@ -14,3 +14,9 @@ git push <remote_name> --delete <branch_name> -deleting remote branch
 git branch -d <branch name> - removes local branch
 
 git checkout -b bugFix ;git commit
+
+
+git checkout -b safezone
+M       .idea/vcs.xml
+M       git.txt
+Switched to a new branch 'safezone'
