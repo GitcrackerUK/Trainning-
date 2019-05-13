@@ -10,5 +10,7 @@ git status-
 git log-
 git push-
 
+git push <remote_name> --delete <branch_name> -deleting remote branch
+git branch -d <branch name> - removes local branch
 
 git checkout -b bugFix ;git commit
