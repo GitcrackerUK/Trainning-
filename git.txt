@@ -10,6 +10,7 @@ git merge-
 git status-
 git log-
 git push-
+git push --set-upstream origin <local branch name to be pushed and created remotly>
 
 DELETING:
 git push <remote_name> --delete <branch_name> -deleting remote branch
