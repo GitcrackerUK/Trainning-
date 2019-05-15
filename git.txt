@@ -1,22 +1,25 @@
-git commit- Creating coppy of changed file.
-
-git checkout- Navigates between branches and commits.
+$ git commit- Creating coppy of changed file.
+$ git add.
+$ git add -A
+          --all
+$ git checkout <name of branch or cmmit> - Navigates between branches and commits.
 """The git checkout command lets you navigate between the branches created by git branch .
 Checking out a branch updates the files in the working directory to match the version stored in that branch, and it tells Git to record all new commits on that branch."""
+$ git checkout HEAD^ -moving HEAD one commit upwards
 
-git branch     -List, create or delete branch
-git remote -v  -List your existing remotes in order to get the name of the remote you want to change.
-git merge-
-git status-
-git log-
-git push-
-git push --set-upstream origin <local branch name to be pushed and created remotly>
+$ git branch     -List, create or delete branch
+$ git remote -v  -List your existing remotes in order to get the name of the remote you want to change.
+$ git merge-
+$ git status-
+$ git log-
+$ git push-
+$ git push --set-upstream origin <local branch name to be pushed and created remotly>
 
 DELETING:
-git push <remote_name> --delete <branch_name> -deleting remote branch
-git branch -d <branch name>                   -removes local branch
-git fetch -p                                  -deletes local branches to match remote branches.
-git remote prune origin                       -deletes local branches to match remote branches.
+$ git push <remote_name> --delete <branch_name> -deleting remote branch
+$ git branch -d <branch name>                   -removes local branch
+$ git fetch -p                                  -deletes local branches to match remote branches.
+$ git remote prune origin                       -deletes local branches to match remote branches.
 
 """After someone deletes a branch from a remote repository,
 git will not automatically delete the local repository branches when
@@ -24,3 +27,4 @@ a user does a git pull or git fetch. However,
 if the user would like to have all tracking branches removed
 from their local repository that have been deleted in a remote repository,
 they can type: git remote prune origin"""
+

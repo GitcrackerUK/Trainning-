@@ -1492,17 +1492,17 @@ Twinkle, twinkle, little star,
 #print(datetime.datetime.now().time())
 
 #99. Write a Python program to clear the screen or terminal.
-import os
-import time
-
-os.system("clear")
-
-def wind_cleare():
-    return  os.system("clear")
-def wind_cleare1():
-    return os.system("cls")
-
+# import os
+# import time
 #
+# os.system("clear")
+#
+# def wind_cleare():
+#     return  os.system("clear")
+# def wind_cleare1():
+#     return os.system("cls")
+
+
 # import os
 # import time
 # # for windows
@@ -1512,7 +1512,19 @@ def wind_cleare1():
 # # Ubuntu version 10.10
 # os.system('clear')
 
-print(os.path.abspath("PycharmProjects/Training-session/Exercises , Basic Part 1.py"))
+#print(os.path.abspath("PycharmProjects/Training-session/Exercises , Basic Part 1.py"))
 
 #100. Write a Python program to get the name of the host on which the routine is running.
 
+# import socket
+#
+# host=socket.gethostname()
+# print("Host name:",host)
+
+#101. Write a Python program to access and print a URL's content to the console.
+
+import urllib.request
+
+url = urllib.request.urlopen("http://www.google.com")
+data = url.read()
+print(data)
