@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab63adda-463b-48e5-befd-69bebf084383" name="Default Changelist" comment="new file git.txt">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercises , Basic Part 1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Exercises , Basic Part 1.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/git.txt" beforeDir="false" afterPath="$PROJECT_DIR$/git.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,8 +44,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/git.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
+            <state relative-caret-position="150">
+              <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -424,7 +422,7 @@
       <workItem from="1555706636131" duration="1851000" />
       <workItem from="1557293921229" duration="6844000" />
       <workItem from="1557561906896" duration="8127000" />
-      <workItem from="1557762661964" duration="6015000" />
+      <workItem from="1557762661964" duration="6505000" />
     </task>
     <task id="LOCAL-00005" summary="Added variables and key words.">
       <created>1550251204056</created>
@@ -773,7 +771,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="275178000" />
+    <option name="totallyTimeSpent" value="275668000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -786,9 +784,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="968" y="35" width="941" height="1033" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.46601942" visible="true" weight="0.224581" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.46601942" visible="true" weight="0.224581" />
       <window_info auto_hide="true" id="Structure" internal_type="SLIDING" order="1" sideWeight="0.5339806" side_tool="true" type="SLIDING" weight="0.23051225" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -799,10 +796,10 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32912844" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" visible="true" weight="0.32912844" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32912844" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.3154961" side_tool="true" weight="0.32912844" />
-      <window_info anchor="bottom" content_ui="combo" x="967" y="753" width="918" height="273" id="Terminal" order="11" sideWeight="0.6845039" weight="0.2190367" />
+      <window_info active="true" anchor="bottom" content_ui="combo" x="967" y="753" width="918" height="273" id="Terminal" order="11" sideWeight="0.6845039" visible="true" weight="0.2190367" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32683486" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="13" weight="0.32912844" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -1153,8 +1150,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/git.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
+        <state relative-caret-position="150">
+          <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
         </state>
       </provider>
     </entry>
