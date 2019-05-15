@@ -7,6 +7,9 @@ $ git checkout <name of branch or cmmit> - Navigates between branches and commit
 Checking out a branch updates the files in the working directory to match the version stored in that branch, and it tells Git to record all new commits on that branch."""
 $ git checkout HEAD^ -moving HEAD one commit upwards
 
+ADDING
+$ git push --set-upstream origin <name>  -To push the current branch and set the remote as upstream
+
 $ git branch     -List, create or delete branch
 $ git remote -v  -List your existing remotes in order to get the name of the remote you want to change.
 $ git merge-
