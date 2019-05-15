@@ -20,6 +20,7 @@ $ git push --set-upstream origin <local branch name to be pushed and created rem
 
 DELETING:
 $ git push <remote_name> --delete <branch_name> -deleting remote branch
+$ git rm -r -f <file name>n                     -removing file from workin directory
 $ git branch -d <branch name>                   -removes local branch
 $ git fetch -p                                  -deletes local branches to match remote branches.
 $ git remote prune origin                       -deletes local branches to match remote branches.
