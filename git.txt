@@ -4,13 +4,14 @@ Checking out a branch updates the files in the working directory to match the ve
 
 $ git checkout HEAD^ -moving HEAD one commit upwards
 $ git branch     -List, create or delete branch
+$ git ls-remote  -List of remote branches as well as more information.
 $ git remote -v  -List your existing remotes in order to get the name of the remote you want to change.
 $ git merge-
 $ git status-
 $ git log-Show commit logs
 """The command takes options applicable to the git rev-list command to control what is shown and how, and options applicable to the git diff-* commands
  to control how the changes each commit introduces are shown."""
- 
+
 $ git push-
 $ git push --set-upstream origin <local branch name to be pushed and created remotly>
 
