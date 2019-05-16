@@ -1,22 +1,25 @@
-$ git commit- Creating coppy of changed file.
-$ git add.
-$ git add -A
-          --all
 $ git checkout <name of branch or cmmit> - Navigates between branches and commits.
 """The git checkout command lets you navigate between the branches created by git branch .
 Checking out a branch updates the files in the working directory to match the version stored in that branch, and it tells Git to record all new commits on that branch."""
+
 $ git checkout HEAD^ -moving HEAD one commit upwards
-
-ADDING
-$ git push --set-upstream origin <name>  -To push the current branch and set the remote as upstream
-
 $ git branch     -List, create or delete branch
 $ git remote -v  -List your existing remotes in order to get the name of the remote you want to change.
 $ git merge-
 $ git status-
-$ git log-
+$ git log-Show commit logs
+"""The command takes options applicable to the git rev-list command to control what is shown and how, and options applicable to the git diff-* commands
+ to control how the changes each commit introduces are shown."""
+ 
 $ git push-
 $ git push --set-upstream origin <local branch name to be pushed and created remotly>
+
+ADDING
+$ git push --set-upstream origin <name>  -To push the current branch and set the remote as upstream
+$ git commit- Creating coppy of changed file.
+$ git add.
+$ git add -A
+          --all
 
 DELETING:
 $ git push <remote_name> --delete <branch_name> -deleting remote branch
@@ -24,7 +27,6 @@ $ git rm -r -f <file name>n                     -removing file from workin direc
 $ git branch -d <branch name>                   -removes local branch
 $ git fetch -p                                  -deletes local branches to match remote branches.
 $ git remote prune origin                       -deletes local branches to match remote branches.
-
 """After someone deletes a branch from a remote repository,
 git will not automatically delete the local repository branches when
 a user does a git pull or git fetch. However,
