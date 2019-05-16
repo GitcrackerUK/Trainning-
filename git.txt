@@ -13,7 +13,7 @@ $ git log-Show commit logs
 """The command takes options applicable to the git rev-list command to control what is shown and how, and options applicable to the git diff-* commands
  to control how the changes each commit introduces are shown."""
 
-$ git push-
+$ git push -save local commits in remote repository
 $ git push --set-upstream origin <local branch name to be pushed and created remotly>
 
 ADDING
@@ -25,7 +25,7 @@ $ git add -A
 
 DELETING:
 $ git push <remote_name> --delete <branch_name> -deleting remote branch
-$ git rm -r -f <file name>n                     -removing file from workin directory
+$ git rm -r -f <file name>                     -removing file from workin directory
 $ git branch -d <branch name>                   -removes local branch
 $ git fetch -p                                  -deletes local branches to match remote branches.
 $ git remote prune origin                       -deletes local branches to match remote branches.
@@ -36,3 +36,6 @@ if the user would like to have all tracking branches removed
 from their local repository that have been deleted in a remote repository,
 they can type: git remote prune origin"""
 
+1)$ git rm -r -f <file name>                     -removing file from workin directory
+2)$ git commit- Creating coppy of changed file/branch
+3)$ git push -save local commits in remote repository
