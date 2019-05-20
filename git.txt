@@ -43,3 +43,6 @@ they can type: git remote prune origin"""
 
 git branch -f master HEAD~3   -moving branch 3 coomints up
 git branch -f master <commit> -moving branch on speciied commit
+
+git revert -is used to revert in remote repository
+git reset  -is used to reset changes in local repository
