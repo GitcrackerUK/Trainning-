@@ -32,9 +32,9 @@ $ git add -A
 $ git commit                                     --Creating coppy of changed file.
 $ git push                                       --Save local commits in remote repository
 $ git push --set-upstream origin <name>          --To push the current branch and set the remote as upstream
-$ git pull                                       --
+$ git pull                                       --Downloads commits from remote repository to local and UPDATING
 $ git fetch                                      --Downloads commits from remote repository to local but NOT updayting local repository.
-$ git clone                                      --Cloning local repository remotly
+$ git clone                                      --Cloning local repository to github
 
   DELETING FROM WORKING DIRECTORY:
 $ git push <remote_name> --delete <branch_name>  --Deleting remote branch
