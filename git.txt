@@ -34,6 +34,7 @@ $ git push                                       --Save local commits in remote 
 $ git push --set-upstream origin <name>          --To push the current branch and set the remote as upstream
 $ git pull                                       --
 $ git fetch                                      --Downloads commits from remote repository to local but NOT updayting local repository.
+$ git clone                                      --Cloning local repository remotly
 
   DELETING FROM WORKING DIRECTORY:
 $ git push <remote_name> --delete <branch_name>  --Deleting remote branch
@@ -67,3 +68,8 @@ git rebase -i master~<Numbers of commits>
 git commit --amend
 git rebase -i master~<Numbers of commits>
 
+note!!!
+"""the behavior of git push with no arguments varies depending on one of git's s
+ ettings called push.default. The default value for this setting depends on the version of git you're using,
+ but we are going to use the upstream value in our lessons. This isn't a huge deal,
+ but it's worth checking your settings before pushing in your own projects."""
