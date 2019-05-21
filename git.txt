@@ -1,14 +1,21 @@
-hash                                             --Commit id
-$ git checkout <name of branch or commit>        --Navigates between branches and commits.
-"""The git checkout command lets you navigate between the branches created by git branch .
-Checking out a branch updates the files in the working directory to match the version stored in that branch, and it tells Git to record all new commits on that branch."""
-
+  MOVING AROUND COMMITS AND BRANCHES:
+$ git checkout <name of branch or commit>        --Moving HEAD between branches and commits.
+$ git branch -f master HEAD~3                    --Moving branch 3 coomints up
+$ git branch -f master <commit>                  --Moving branch on speciied commit
 $ git checkout HEAD^                             --Moving HEAD one commit upwards
-$ git branch                                     --List, create or delete branch
+
+  LISTING BRANCHES AND COMMITS
+$ git log                                        --LIst of commit logs
+$ git branch                                     --List of branches in current work directory
 $ git git ls-files                               --List of files in local work directory
 $ git ls-remote                                  --List of remote branches as well as more information.
 $ git remote -v                                  --List your existing remotes in order to get the name of the remote you want to change.
+
+  MERGING AND REBAISING
 $ git merge                                      --Adding branch commits to the other branch
+$ git cherry-pick <Commit1> <Commit2> <...>      --Method of combining work from chosen commits.
+$ git rebase -i HEAD~<number of commits>         --This command o
+
 """If you want to merge project-a into project-b:"""
 cd path/to/project-b
 git remote add project-a path/to/project-a
@@ -17,20 +24,17 @@ git merge --allow-unrelated-histories project-a/master # or whichever branch you
 git remote remove project-a
 
 $ git status--
-$ git log   --Show commit logs
-"""The command takes options applicable to the git rev-list command to control what is shown and how, and options applicable to the git diff-* commands to control how the changes each commit introduces are shown."""
 
-  ADDING CHANGES TO REPO
+  ADDING CHANGES TO WORKING DIRECTORY:
+$ git branch <name of branch>                    --Adding new branch to repository
 $ git add.
 $ git add -A
-          --all
-$ git commit
+$ git commit                                     --Creating coppy of changed file.
 $ git push                                       --Save local commits in remote repository
 $ git push --set-upstream origin <name>          --To push the current branch and set the remote as upstream
-                                    --Creating coppy of changed file.
 
 
-  DELETING:
+  DELETING FROM WORKING DIRECTORY:
 $ git push <remote_name> --delete <branch_name>  --Deleting remote branch
 $ git rm -r -f <file name>                       --Removing file from workin directory
 $ git rm --cached <file name>                    --Untracking file from working repo
@@ -50,14 +54,12 @@ they can type: git remote prune origin"""
 
 
 
-git branch -f master HEAD~3                      --Moving branch 3 coomints up
-git branch -f master <commit>                    --Moving branch on speciied commit
+
 
 git revert <commit ref>                          --Is used to revert in remote repository
 git reset  <commit ref>                          --Is used to reset changes in local repository
 
-git cherry-pick <Commit1> <Commit2> <...>        --This method of combining work is gluing chosen commits together.
-git rebase -i HEAD~<number of commits to work on>--This command o
+
 
 
 git rebase -i master~<Numbers of commits>
