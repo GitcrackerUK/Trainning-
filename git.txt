@@ -33,6 +33,7 @@ $ git commit                                     --Creating coppy of changed fil
 $ git push                                       --Save local commits in remote repository
 $ git push --set-upstream origin <name>          --To push the current branch and set the remote as upstream
 $ git pull                                       --Downloads commits from remote repository to local and UPDATING
+$ git pull --rebase                              --
 $ git fetch                                      --Downloads commits from remote repository to local but NOT updayting local repository.
 $ git clone                                      --Cloning local repository to github
 
