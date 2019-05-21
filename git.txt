@@ -56,3 +56,9 @@ git reset  <commit ref>                          --Is used to reset changes in l
 
 git cherry-pick <Commit1> <Commit2> <...>        --This method of combining work is gluing chosen commits together.
 git rebase -i HEAD~<number of commits to work on>--This command o
+
+
+git rebase -i master~<Numbers of commits>
+git commit --amend
+git rebase -i master~<Numbers of commits>
+
