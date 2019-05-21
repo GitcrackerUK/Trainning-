@@ -1,14 +1,14 @@
 hash-- commit id
-$ git checkout <name of branch or cmmit> - Navigates between branches and commits.
+$ git checkout <name of branch or cmmit> --Navigates between branches and commits.
 """The git checkout command lets you navigate between the branches created by git branch .
 Checking out a branch updates the files in the working directory to match the version stored in that branch, and it tells Git to record all new commits on that branch."""
 
-$ git checkout HEAD^ -moving HEAD one commit upwards
-$ git branch         -List, create or delete branch
-$ git git ls-files   -List of files in local work directory
-$ git ls-remote      -List of remote branches as well as more information.
-$ git remote -v      -List your existing remotes in order to get the name of the remote you want to change.
-$ git merge-
+$ git checkout HEAD^ --Moving HEAD one commit upwards
+$ git branch         --List, create or delete branch
+$ git git ls-files   --List of files in local work directory
+$ git ls-remote      --List of remote branches as well as more information.
+$ git remote -v      --List your existing remotes in order to get the name of the remote you want to change.
+$ git merge          --Adding branch commits to the other branch
 """If you want to merge project-a into project-b:"""
 cd path/to/project-b
 git remote add project-a path/to/project-a
@@ -16,29 +16,25 @@ git fetch project-a --tags
 git merge --allow-unrelated-histories project-a/master # or whichever branch you want to merge
 git remote remove project-a
 
-$ git status-
-$ git log-Show commit logs
-"""The command takes options applicable to the git rev-list command to control what is shown and how, and options applicable to the git diff-* commands
- to control how the changes each commit introduces are shown."""
-
-$ git push -save local commits in remote repository
-$ git push --set-upstream origin <local branch name to be pushed and created remotly>
+$ git status--
+$ git log   --Show commit logs
+"""The command takes options applicable to the git rev-list command to control what is shown and how, and options applicable to the git diff-* commands to control how the changes each commit introduces are shown."""
 
 ADDING
-$ git push --set-upstream origin <name>  -To push the current branch and set the remote as upstream
+$ git push                               --save local commits in remote repository
+$ git push --set-upstream origin <name>  --To push the current branch and set the remote as upstream
 $ git commit- Creating coppy of changed file.
 $ git add.
 $ git add -A
           --all
 
 DELETING:
-$ git push <remote_name> --delete <branch_name> -deleting remote branch
-$ git rm -r -f <file name>                      -removing file from workin directory
-$ git rm --cached <file name>                   -untracking file from working repo
-$ git branch -d <branch name>                   -removes local branch
-$ git fetch -p                                  -deletes local branches to match remote branches.
-$ git remote prune origin                       -deletes local branches to match remote branches.
-
+$ git push <remote_name> --delete <branch_name> --deleting remote branch
+$ git rm -r -f <file name>                      --removing file from workin directory
+$ git rm --cached <file name>                   --untracking file from working repo
+$ git branch -d <branch name>                   --removes local branch
+$ git fetch -p                                  --deletes local branches to match remote branches.
+$ git remote prune origin                       --deletes local branches to match remote branches.
 """After someone deletes a branch from a remote repository,
 git will not automatically delete the local repository branches when
 a user does a git pull or git fetch. However,
@@ -46,12 +42,12 @@ if the user would like to have all tracking branches removed
 from their local repository that have been deleted in a remote repository,
 they can type: git remote prune origin"""
 
-1)$ git rm -r -f <file name>                     -removing file from workin directory
-2)$ git commit- Creating coppy of changed file/branch
-3)$ git push -save local commits in remote repository
+1)$ git rm -r -f <file name>                     --Removing file from workin directory
+2)$ git commit                                   --Creating coppy of changed file/branch
+3)$ git push                                     --save local commits in remote repository
 
-git branch -f master HEAD~3   -moving branch 3 coomints up
-git branch -f master <commit> -moving branch on speciied commit
+git branch -f master HEAD~3                      --moving branch 3 coomints up
+git branch -f master <commit>                    --moving branch on speciied commit
 
 git revert <commit ref>-is used to revert in remote repository
 git reset  <commit ref>-is used to reset changes in local repository
