@@ -20,13 +20,15 @@ $ git status--
 $ git log   --Show commit logs
 """The command takes options applicable to the git rev-list command to control what is shown and how, and options applicable to the git diff-* commands to control how the changes each commit introduces are shown."""
 
-  ADDING
-$ git push                                       --Save local commits in remote repository
-$ git push --set-upstream origin <name>          --To push the current branch and set the remote as upstream
-$ git commit                                     --Creating coppy of changed file.
+  ADDING CHANGES TO REPO
 $ git add.
 $ git add -A
           --all
+$ git commit
+$ git push                                       --Save local commits in remote repository
+$ git push --set-upstream origin <name>          --To push the current branch and set the remote as upstream
+                                    --Creating coppy of changed file.
+
 
   DELETING:
 $ git push <remote_name> --delete <branch_name>  --Deleting remote branch
