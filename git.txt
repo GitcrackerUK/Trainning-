@@ -1,13 +1,21 @@
+hash-- commit id
 $ git checkout <name of branch or cmmit> - Navigates between branches and commits.
 """The git checkout command lets you navigate between the branches created by git branch .
 Checking out a branch updates the files in the working directory to match the version stored in that branch, and it tells Git to record all new commits on that branch."""
 
 $ git checkout HEAD^ -moving HEAD one commit upwards
-$ git branch     -List, create or delete branch
-$ git git ls-files  -List of files in local work directory
-$ git ls-remote  -List of remote branches as well as more information.
-$ git remote -v  -List your existing remotes in order to get the name of the remote you want to change.
+$ git branch         -List, create or delete branch
+$ git git ls-files   -List of files in local work directory
+$ git ls-remote      -List of remote branches as well as more information.
+$ git remote -v      -List your existing remotes in order to get the name of the remote you want to change.
 $ git merge-
+"""If you want to merge project-a into project-b:"""
+cd path/to/project-b
+git remote add project-a path/to/project-a
+git fetch project-a --tags
+git merge --allow-unrelated-histories project-a/master # or whichever branch you want to merge
+git remote remove project-a
+
 $ git status-
 $ git log-Show commit logs
 """The command takes options applicable to the git rev-list command to control what is shown and how, and options applicable to the git diff-* commands
@@ -25,10 +33,12 @@ $ git add -A
 
 DELETING:
 $ git push <remote_name> --delete <branch_name> -deleting remote branch
-$ git rm -r -f <file name>                     -removing file from workin directory
+$ git rm -r -f <file name>                      -removing file from workin directory
+$ git rm --cached <file name>                   -untracking file from working repo
 $ git branch -d <branch name>                   -removes local branch
 $ git fetch -p                                  -deletes local branches to match remote branches.
 $ git remote prune origin                       -deletes local branches to match remote branches.
+
 """After someone deletes a branch from a remote repository,
 git will not automatically delete the local repository branches when
 a user does a git pull or git fetch. However,
@@ -40,7 +50,6 @@ they can type: git remote prune origin"""
 2)$ git commit- Creating coppy of changed file/branch
 3)$ git push -save local commits in remote repository
 
-
 git branch -f master HEAD~3   -moving branch 3 coomints up
 git branch -f master <commit> -moving branch on speciied commit
 
@@ -48,26 +57,7 @@ git revert <commit ref>-is used to revert in remote repository
 git reset  <commit ref>-is used to reset changes in local repository
 
 git cherry-pick <Commit1> <Commit2> <...>  -- this method of combining work is gluing chosen commits together.
+git rebase -i HEAD~<number of commits to work on> -- this command o
 
-$ mkdir git_revert_test
-$ cd git_revert_test/
-$ git init .
-Initialized empty Git repository in /git_revert_test/.git/
-$ touch demo_file
-$ git add demo_file
-$ git commit -am"initial commit"
-[master (root-commit) 299b15f] initial commit
-1 file changed, 0 insertions(+), 0 deletions(-)
-create mode 100644 demo_file
-$ echo "initial content" >> demo_file
-$ git commit -am"add new content to demo file"
-[master 3602d88] add new content to demo file
-n 1 file changed, 1 insertion(+)
-$ echo "prepended line content" >> demo_file
-$ git commit -am"prepend content to demo file"
-[master 86bb32e] prepend content to demo file
-1 file changed, 1 insertion(+)
-$ git log --oneline
-86bb32e prepend content to demo file
-3602d88 add new content to demo file
-299b15f initial commit
+
+
