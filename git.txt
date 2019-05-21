@@ -1,14 +1,14 @@
-hash                                            --Commit id
-$ git checkout <name of branch or commit>       --Navigates between branches and commits.
+hash                                             --Commit id
+$ git checkout <name of branch or commit>        --Navigates between branches and commits.
 """The git checkout command lets you navigate between the branches created by git branch .
 Checking out a branch updates the files in the working directory to match the version stored in that branch, and it tells Git to record all new commits on that branch."""
 
-$ git checkout HEAD^                            --Moving HEAD one commit upwards
-$ git branch                                    --List, create or delete branch
-$ git git ls-files                              --List of files in local work directory
-$ git ls-remote                                 --List of remote branches as well as more information.
-$ git remote -v                                 --List your existing remotes in order to get the name of the remote you want to change.
-$ git merge                                     --Adding branch commits to the other branch
+$ git checkout HEAD^                             --Moving HEAD one commit upwards
+$ git branch                                     --List, create or delete branch
+$ git git ls-files                               --List of files in local work directory
+$ git ls-remote                                  --List of remote branches as well as more information.
+$ git remote -v                                  --List your existing remotes in order to get the name of the remote you want to change.
+$ git merge                                      --Adding branch commits to the other branch
 """If you want to merge project-a into project-b:"""
 cd path/to/project-b
 git remote add project-a path/to/project-a
@@ -29,12 +29,12 @@ $ git add -A
           --all
 
 DELETING:
-$ git push <remote_name> --delete <branch_name> --Deleting remote branch
-$ git rm -r -f <file name>                      --Removing file from workin directory
-$ git rm --cached <file name>                   --Untracking file from working repo
-$ git branch -d <branch name>                   --Removes local branch
-$ git fetch -p                                  --Deletes local branches to match remote branches.
-$ git remote prune origin                       --Deletes local branches to match remote branches.
+$ git push <remote_name> --delete <branch_name>  --Deleting remote branch
+$ git rm -r -f <file name>                       --Removing file from workin directory
+$ git rm --cached <file name>                    --Untracking file from working repo
+$ git branch -d <branch name>                    --Removes local branch
+$ git fetch -p                                   --Deletes local branches to match remote branches.
+$ git remote prune origin                        --Deletes local branches to match remote branches.
 """After someone deletes a branch from a remote repository,
 git will not automatically delete the local repository branches when
 a user does a git pull or git fetch. However,
