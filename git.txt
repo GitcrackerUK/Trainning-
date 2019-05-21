@@ -41,10 +41,12 @@ a user does a git pull or git fetch. However,
 if the user would like to have all tracking branches removed
 from their local repository that have been deleted in a remote repository,
 they can type: git remote prune origin"""
-
+PROCEDURE FOR REMOVING FILE FROM WD:
 1)$ git rm -r -f <file name>                     --Removing file from workin directory
 2)$ git commit                                   --Creating coppy of changed file/branch
 3)$ git push                                     --Save local commits in remote repository
+
+
 
 git branch -f master HEAD~3                      --Moving branch 3 coomints up
 git branch -f master <commit>                    --Moving branch on speciied commit
