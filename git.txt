@@ -1,8 +1,9 @@
   MOVING AROUND COMMITS AND BRANCHES:
+$ git checkout HEAD^                             --Moving HEAD one commit upwards
 $ git checkout <name of branch or commit>        --Moving HEAD between branches and commits.
 $ git branch -f master HEAD~3                    --Moving branch 3 coomints up
 $ git branch -f master <commit>                  --Moving branch on speciied commit
-$ git checkout HEAD^                             --Moving HEAD one commit upwards
+
 
   LISTING BRANCHES AND COMMITS
 $ git log                                        --LIst of commit logs
