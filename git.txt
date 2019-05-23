@@ -64,7 +64,7 @@ PROCEDURE FOR UPDATING REMOTE REPOSITORY
 4)$git push
 
 
-
+origin/master -- Remote branch represented in local working directory.
 
 
 git revert <commit ref>                          --Is used to revert in remote repository
