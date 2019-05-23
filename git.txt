@@ -63,9 +63,10 @@ PROCEDURE FOR UPDATING REMOTE REPOSITORY
 3)$git cherry-pick <commits>
 4)$git push
 
-
-origin/master -- Remote branch represented in local working directory.
-
+REMOTE REPOSITORRY
+origin/master                                    --Remote branch represented in local working directory.
+git branch -u orgin/master <branch>              --Setting up conections between local branch and remote master
+git branch -u orgin/master                       --If branch is "checkout" setting up conections between local branch and remote master.
 
 git revert <commit ref>                          --Is used to revert in remote repository
 git reset  <commit ref>                          --Is used to reset changes in local repository
