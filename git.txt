@@ -61,6 +61,7 @@ they can type: git remote prune origin"""
 origin/master                                    --Remote branch represented in local working directory.
 git branch -u orgin/master <branch>              --Setting up conections between local branch and remote master
 git branch -u orgin/master                       --If branch is "checkout" setting up conections between local branch and remote master.
+git --unset-upstream                             --Remove the upstream information for <branchname>
 git push orgin master                            --Pushing local master to remote without HEAD on local master
 
 
