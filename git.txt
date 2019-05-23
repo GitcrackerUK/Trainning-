@@ -63,7 +63,7 @@ git branch -u orgin/master <branch>              --Setting up conections between
 git branch -u orgin/master                       --If branch is "checkout" setting up conections between local branch and remote master.
 git --unset-upstream                             --Remove the upstream information for <branchname>
 git push orgin master                            --Pushing local master to remote without HEAD on local master
-push.default                                     --Defines the action git push should take if no refspec is given on the command line.
+push.default                                     --Defines the action git push should take if no refspec is given on the command line.(https://makandracards.com/makandra/8039-git-how-to-configure-git-to-push-only-your-current-branch)
 
   PROCEDURE FOR UPDATING REMOTE REPOSITORY
 1)$git checkout <branch>
