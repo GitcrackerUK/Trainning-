@@ -4,7 +4,6 @@ $ git checkout <name of branch or commit>        --Moving HEAD between branches 
 $ git branch -f master HEAD~3                    --Moving branch 3 coomints up
 $ git branch -f master <commit>                  --Moving branch on speciied commit
 
-
   LISTING BRANCHES AND COMMITS
 $ git log                                        --LIst of commit logs
 $ git branch                                     --List of branches in current work directory
@@ -71,11 +70,8 @@ push.default                                     --Defines the action git push s
 3)$git cherry-pick <commits>
 4)$git push
 
-
 git revert <commit ref>                          --Is used to revert in remote repository
 git reset  <commit ref>                          --Is used to reset changes in local repository
-
-
 
 
 git rebase -i master~<Numbers of commits>
