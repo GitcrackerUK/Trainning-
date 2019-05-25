@@ -8,7 +8,7 @@ $ git branch -f master <commit>                  --Moving branch on speciied com
   LISTING BRANCHES AND COMMITS
 $ git log                                        --LIst of commit logs
 $ git branch                                     --List of branches in current work directory
-$ git git ls-files                               --List of files in local work directory
+$ git ls-files                                   --List of files in local work directory
 $ git ls-remote                                  --List of remote branches as well as more information.
 $ git remote -v                                  --List your existing remotes in order to get the name of the remote you want to change.
 
