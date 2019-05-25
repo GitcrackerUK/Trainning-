@@ -62,8 +62,12 @@ git branch -u orgin/master <branch>              --Setting up conections between
 git branch -u orgin/master                       --If branch is "checkout" setting up conections between local branch and remote master.
 git --unset-upstream                             --Remove the upstream information for <branchname>
 git push orgin master                            --Pushing local master to remote without HEAD on local master
-push.default                                     --Defines the action git push should take if no refspec is given on the command line.
-                                                 (https://makandracards.com/makandra/8039-git-how-to-configure-git-to-push-only-your-current-branch)
+git config --global push.default <*>             --Defines the action git push should take if no refspec is given on the command line.
+                                                   *nothing  -- do not push anything.
+                                                   *matching -- push all matching branches. All branches having the same name in both ends are considered to be matching. This is the default.
+                                                   *upstream -- push the current branch to its upstream branch.
+                                                   *tracking -- deprecated synonym for upstream.
+                                                   *current  -- push the current branch to a branch of the same name.
   PROCEDURE FOR UPDATING REMOTE REPOSITORY
 1)$git checkout <branch>
 2)$git pull
