@@ -1,26 +1,97 @@
-git commit- Creating coppy of changed file.
+  MOVING AROUND COMMITS AND BRANCHES:
+$ git checkout HEAD^                             --Moving HEAD one commit upwards
+$ git checkout <name of branch or commit>        --Moving HEAD between branches and commits.
+$ git branch -f master HEAD~3                    --Moving branch 3 coomints up
+$ git branch -f master <commit>                  --Moving branch on speciied commit
 
-git checkout- Navigates between branches and commits.
-"""The git checkout command lets you navigate between the branches created by git branch .
-Checking out a branch updates the files in the working directory to match the version stored in that branch, and it tells Git to record all new commits on that branch."""
+  LISTING BRANCHES AND COMMITS
+$ git log                                        --LIst of commit logs
+$ git branch                                     --List of branches in current work directory
+$ git ls-files                                   --List of files in local work directory
+$ git ls-remote                                  --List of remote branches as well as more information.
+$ git remote -v                                  --List your existing remotes in order to get the name of the remote you want to change.
 
-git branch     -List, create or delete branch
-git remote -v  -List your existing remotes in order to get the name of the remote you want to change.
-git merge-
-git status-
-git log-
-git push-
-git push --set-upstream origin <local branch name to be pushed and created remotly>
+  MERGING AND REBAISING
+$ git merge                                      --Adding branch commits to the other branch
+$ git cherry-pick <Commit1> <Commit2> <...>      --Method of combining work from chosen commits.
+$ git rebase -i HEAD~<number of commits>         --This command chooosing commits to combine
+$ git pull --rebase                              --copy remote branch and combining it wit local branch as a new base commit.
 
-DELETING:
-git push <remote_name> --delete <branch_name> -deleting remote branch
-git branch -d <branch name>                   -removes local branch
-git fetch -p                                  -deletes local branches to match remote branches.
-git remote prune origin                       -deletes local branches to match remote branches.
 
-"""After someone deletes a branch from a remote repository,
+"""If you want to merge project-a into project-b:"""
+cd path/to/project-b
+git remote add project-a path/to/project-a
+git fetch project-a --tags
+git merge --allow-unrelated-histories project-a/master
+git remote remove project-a
+
+$ git status--
+
+  ADDING CHANGES TO WORKING DIRECTORY:
+$ git branch <name of branch>                    --Adding new branch to repository
+$ git add.
+$ git add -A
+$ git commit                                     --Creating coppy of changed file.
+$ git push                                       --Save local commits in remote repository
+$ git push --set-upstream origin <name>          --To push the current branch and set the remote as upstream
+$ git pull                                       --Downloads commits from remote repository and UPDATES local.
+$ git pull --rebase                              --Downloads commits from remote repository to local and creating new SEPERATE commit
+$ git fetch                                      --Downloads commits from remote repository to local but NOT updayting local repository.
+$ git clone                                      --Cloning local repository to github
+
+  DELETING FROM WORKING DIRECTORY:
+$ git push <remote_name> --delete <branch_name>  --Deleting remote branch
+$ git rm -r -f <file name>                       --Removing file from workin directory
+$ git rm --cached <file name>                    --Untracking file from working repo
+$ git branch -d <branch name>                    --Removes local branch
+$ git fetch -p                                   --Deletes local branches to match remote branches.
+$ git remote prune origin                        --Deletes local branches to match remote branches.
+  """After someone deletes a branch from a remote repository,
 git will not automatically delete the local repository branches when
 a user does a git pull or git fetch. However,
 if the user would like to have all tracking branches removed
 from their local repository that have been deleted in a remote repository,
 they can type: git remote prune origin"""
+
+  PROCEDURE FOR REMOVING FILE FROM WD:
+1)$ git rm -r -f <file name>                     --Removing file from workin directory
+2)$ git commit                                   --Creating coppy of changed file/branch
+3)$ git push                                     --Save local commits in remote repository
+
+  REMOTE REPOSITORRY
+$ origin/master                                    --Remote branch represented in local working directory.
+$ git checkout -b totallyNotMaster o/master        --Creating new local branch to track remote master
+$ git push origin <source>:<destination>           --Pushing commits from specified local branch to specified remote branch.
+$ git push origin <sourec>:<new branch>            --Pushing commits from specified local branch to new remote branch.
+$ git branch -u orgin/master <branch>              --Setting up conections between local branch and remote master
+$ git branch -u orgin/master                       --If branch is "checkout" setting up conections between local branch and remote master.
+$ git --unset-upstream                             --Remove the upstream information for <branchname>
+$ git push orgin master                            --Pushing local master to remote without HEAD on local master
+$ git config --global push.default <*>             --Defines the action git push should take if no refspec is given on the command line.
+                                                   *nothing  -- do not push anything.
+                                                   *matching -- push all matching branches. All branches having the same name in both ends are considered to be matching. This is the default.
+                                                   *upstream -- push the current branch to its upstream branch.
+                                                   *tracking -- deprecated synonym for upstream.
+                                                   *current  -- push the current branch to a branch of the same name.
+$ git fetch origin <remote branch>                 --Downloading missing commits from remote branch to local origin/branch but not updating working directory.
+  PROCEDURE FOR UPDATING REMOTE REPOSITORY
+1)$git checkout <branch>
+2)$git pull
+3)$git cherry-pick <commits>
+4)$git push
+
+git revert <commit ref>                          --Is used to revert in remote repository
+git reset  <commit ref>                          --Is used to reset changes in local repository
+
+
+git rebase -i master~<Numbers of commits>
+git commit --amend
+git rebase -i master~<Numbers of commits>
+
+note!!!
+"""the behavior of GIT PUSH with no arguments varies depending on one of git's s
+ ettings called push.default. The default value for this setting depends on the version of git you're using,
+ but we are going to use the upstream value in our lessons. This isn't a huge deal,
+ but it's worth checking your settings before pushing in your own projects."""
+
+FINISH OF GIT BRANCHING
