@@ -1,4 +1,7 @@
-$ touch <file name>                                      ==
-$ rm <file name>                                         ==
-$ cd.                                                    ==
-$ cd <file path>                                         ==
+$ touch <file name>                                      --creates new file via terminal
+$ rm <file name>                                         --removes file from dir
+$ cd.                                                    --
+$ cd <file path>                                         --
+$ ls                                                     --list of files
+$ ls -a                                                  --list of files included hiden files
+$ pwd                                                    --printing working directory
