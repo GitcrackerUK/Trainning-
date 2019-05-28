@@ -15,12 +15,14 @@ $ git remote -v                                  --List your existing remotes in
 $ git merge                                      --Adding branch commits to the other branch
 $ git cherry-pick <Commit1> <Commit2> <...>      --Method of combining work from chosen commits.
 $ git rebase -i HEAD~<number of commits>         --This command o
+$ git pull --rebase                              --copy remote branch and combining it wit local branch as a new base commit.
+
 
 """If you want to merge project-a into project-b:"""
 cd path/to/project-b
 git remote add project-a path/to/project-a
 git fetch project-a --tags
-git merge --allow-unrelated-histories project-a/master # or whichever branch you want to merge
+git merge --allow-unrelated-histories project-a/master
 git remote remove project-a
 
 $ git status--
