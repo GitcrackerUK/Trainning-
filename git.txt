@@ -59,19 +59,21 @@ they can type: git remote prune origin"""
 3)$ git push                                     --Save local commits in remote repository
 
   REMOTE REPOSITORRY
-origin/master                                    --Remote branch represented in local working directory.
-git checkout -b totallyNotMaster o/master        --Creating new local branch to track remote master
-git push origin <source>:<destination>           --Pushing commits from specified local branch to specified remote branch.
-git branch -u orgin/master <branch>              --Setting up conections between local branch and remote master
-git branch -u orgin/master                       --If branch is "checkout" setting up conections between local branch and remote master.
-git --unset-upstream                             --Remove the upstream information for <branchname>
-git push orgin master                            --Pushing local master to remote without HEAD on local master
-git config --global push.default <*>             --Defines the action git push should take if no refspec is given on the command line.
+$ origin/master                                    --Remote branch represented in local working directory.
+$ git checkout -b totallyNotMaster o/master        --Creating new local branch to track remote master
+$ git push origin <source>:<destination>           --Pushing commits from specified local branch to specified remote branch.
+$ git push origin <sourec>:<new branch>            --Pushing commits from specified local branch to new remote branch.
+$ git branch -u orgin/master <branch>              --Setting up conections between local branch and remote master
+$ git branch -u orgin/master                       --If branch is "checkout" setting up conections between local branch and remote master.
+$ git --unset-upstream                             --Remove the upstream information for <branchname>
+$ git push orgin master                            --Pushing local master to remote without HEAD on local master
+$ git config --global push.default <*>             --Defines the action git push should take if no refspec is given on the command line.
                                                    *nothing  -- do not push anything.
                                                    *matching -- push all matching branches. All branches having the same name in both ends are considered to be matching. This is the default.
                                                    *upstream -- push the current branch to its upstream branch.
                                                    *tracking -- deprecated synonym for upstream.
                                                    *current  -- push the current branch to a branch of the same name.
+$ git fetch origin <remote branch>                 --Downloading missing commits from remote branch to local origin/branch but not updating working directory.
   PROCEDURE FOR UPDATING REMOTE REPOSITORY
 1)$git checkout <branch>
 2)$git pull
@@ -91,3 +93,5 @@ note!!!
  ettings called push.default. The default value for this setting depends on the version of git you're using,
  but we are going to use the upstream value in our lessons. This isn't a huge deal,
  but it's worth checking your settings before pushing in your own projects."""
+
+FINISH OF GIT BRANCHING
