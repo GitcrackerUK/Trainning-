@@ -1515,11 +1515,10 @@ Twinkle, twinkle, little star,
 #print(os.path.abspath("PycharmProjects/Training-session/Exercises , Basic Part 1.py"))
 
 #100. Write a Python program to get the name of the host on which the routine is running.
-<<<<<<< HEAD
+
 # import socket
 # hostN=socket.gethostname()
 # print("Host name:", hostN)
-=======
 
 # import socket
 #
@@ -1533,4 +1532,4 @@ import urllib.request
 url = urllib.request.urlopen("http://www.google.com")
 data = url.read()
 print(data)
->>>>>>> 100
+
