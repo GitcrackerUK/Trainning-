@@ -14,7 +14,7 @@ $ git remote -v                                  --List your existing remotes in
   MERGING AND REBAISING
 $ git merge                                      --Adding branch commits to the other branch
 $ git cherry-pick <Commit1> <Commit2> <...>      --Method of combining work from chosen commits.
-$ git rebase -i HEAD~<number of commits>         --This command o
+$ git rebase -i HEAD~<number of commits>         --This command chooosing commits to combine
 $ git pull --rebase                              --copy remote branch and combining it wit local branch as a new base commit.
 
 
