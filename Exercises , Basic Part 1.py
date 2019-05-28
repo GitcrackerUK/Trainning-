@@ -1527,9 +1527,9 @@ Twinkle, twinkle, little star,
 
 #101. Write a Python program to access and print a URL's content to the console.
 
-import urllib.request
-
-url = urllib.request.urlopen("http://www.google.com")
-data = url.read()
-print(data)
+# import urllib.request
+#
+# url = urllib.request.urlopen("http://www.google.com")
+# data = url.read()
+# print(data)
 
