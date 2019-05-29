@@ -1535,7 +1535,7 @@ Twinkle, twinkle, little star,
 
 #102. Write a Python program to get system command output.
 
-import os
-
-list=os.system("ls")
-print(list)
+# import os
+#
+# list=os.system("ls")
+# print(list)
