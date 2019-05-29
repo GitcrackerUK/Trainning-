@@ -1,7 +1,23 @@
 $ touch <file name>                                      --creates new file via terminal
 $ rm <file name>                                         --removes file from dir
+==============================================================================================
+absolute pathname - begins with the root directory and follows the tree branch by branch until the path to the desired directory or file is completed.
+relative pathname
 $ cd.                                                    --
 $ cd <file path>                                         --
-$ ls                                                     --list of files
-$ ls -a                                                  --list of files included hiden files
-$ pwd                                                    --printing working directory
+$ cd/                                                    --Navigates to root directory (/$)
+$ cd                                                     --Navigates to home directory (~$)
+==============================================================================================
+$ ls                                                     --List of files
+$ ls -a                                                  --List of files included hiden files
+$ ls ~                                                   --List of files in home directory
+$ pwd                                                    --Printing working directory
+==============================================================================================
+$ cp <File name><New name of copied file>                --Copies file and creating new with sepcified name
+
+
+
+
+
+==============================================================================================
+$ gsettings set org.gnome.desktop.wm.preferences focus-mode 'sloppy'   --"focus follows mouse"
