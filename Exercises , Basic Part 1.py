@@ -1521,14 +1521,27 @@ Twinkle, twinkle, little star,
 # print("Host name:", hostN)
 
 # import socket
-#
+
 # host=socket.gethostname()
 # print("Host name:",host)
 
 #101. Write a Python program to access and print a URL's content to the console.
 
-import urllib.request
+# import urllib.request
+
+# url = urllib.request.urlopen("http://www.google.com")
+# data = url.read()
+# print(data)
+
+#102. Write a Python program to get system command output.
+
 
 url = urllib.request.urlopen("http://www.google.com")
 data = url.read()
 print(data)
+
+import os
+
+list=os.system("ls")
+print(list)
+

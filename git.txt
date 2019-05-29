@@ -51,7 +51,7 @@ git will not automatically delete the local repository branches when
 a user does a git pull or git fetch. However,
 if the user would like to have all tracking branches removed
 from their local repository that have been deleted in a remote repository,
-they can type: git remote prune origin"""
+they can type: git remote pyrune origin"""
 
   PROCEDURE FOR REMOVING FILE FROM WD:
 1)$ git rm -r -f <file name>                     --Removing file from workin directory
@@ -73,6 +73,7 @@ $ git config --global push.default <*>             --Defines the action git push
                                                    *upstream -- push the current branch to its upstream branch.
                                                    *tracking -- deprecated synonym for upstream.
                                                    *current  -- push the current branch to a branch of the same name.
+
 $ git fetch origin <remote branch>                 --Downloading missing commits from remote branch to local origin/branch but not updating working directory.
   PROCEDURE FOR UPDATING REMOTE REPOSITORY
 1)$git checkout <branch>
@@ -80,8 +81,8 @@ $ git fetch origin <remote branch>                 --Downloading missing commits
 3)$git cherry-pick <commits>
 4)$git push
 
-git revert <commit ref>                          --Is used to revert in remote repository
-git reset  <commit ref>                          --Is used to reset changes in local repository
+git revert <commit ref>                            --Is used to revert in remote repository
+git reset  <commit ref>                            --Is used to reset changes in local repository
 
 
 git rebase -i master~<Numbers of commits>
