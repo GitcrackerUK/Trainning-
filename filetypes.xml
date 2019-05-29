@@ -6,6 +6,7 @@
       <mapping pattern="Bunty" type="PLAIN_TEXT" />
       <mapping pattern="without #" type="PLAIN_TEXT" />
       <mapping pattern="dir" type="PLAIN_TEXT" />
+      <mapping pattern="Basic" type="PLAIN_TEXT" />
       <mapping pattern="aaaa" type="PLAIN_TEXT" />
       <mapping pattern=".hello.py.swp" type="Python" />
     </extensionMap>
