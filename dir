@@ -33,5 +33,4 @@ $ less <File name>                                       --Opens text file in ed
 $ gsettings set org.gnome.desktop.wm.preferences focus-mode 'sloppy'   --"focus follows mouse"
 
 
-
 Linux has no concept of a "file extension"
