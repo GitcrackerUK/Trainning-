@@ -1,5 +1,7 @@
 $ touch <file name>                                      --creates new file via terminal
-$ rm <file name>                                         --removes file from dir
+$ cp <File name><New name of copied file>                --Copies file and creating new with sepcified name
+----------------------------------------------------------------------------------------------
+$ rm <file name>                                         --removes file from directory
 ==============================================================================================
 absolute pathname - begins with the root directory and follows the tree branch by branch until the path to the desired directory or file is completed.
 relative pathname
@@ -10,15 +12,20 @@ $ cd/                                                    --Navigates to root dir
 $ cd                                                     --Navigates to home directory (~$)
 ==============================================================================================
 $ ls                                                     --List of all files excluded hiden files
-$ ls -l                                                  --List of all files excluded hiden files in long format
+$ ls -l                                                  --List of all files excluded hiden files in Long Format
 $ ls -a                                                  --List of all files included hiden files
 $ ls ~                                                   --List of files in home directory
 $ ls /<dir>                                              --List of files in specified directory
 $ pwd                                                    --Printing working directory
+$ file <name of file>                                    --determine file content
+============================================================================================
+$ ls -l
+Long Format:
+FIle Permissions       Owner      Group      Size   Modification Time         File Name
+----------------------------------------------------------------------------------------------
+drwxr-xr-x         8 gitcracker gitcracker   4096      lut 14 19:15      PycharmProjects
 ==============================================================================================
-$ cp <File name><New name of copied file>                --Copies file and creating new with sepcified name
-
-
+$ less <File name>                                       --Opens text file in editor
 
 
 
