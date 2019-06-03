@@ -34,6 +34,7 @@ $ gsettings set org.gnome.desktop.wm.preferences focus-mode 'sloppy'   --"focus 
 
 
 
+<<<<<<< HEAD
 Linux has no concept of a "file extension"
 
 Root directory
@@ -42,3 +43,6 @@ Root directory
     /fstab                                                  --The fstab file contains a table of devices that get mounted when your system boots. This file defines your disk drives.
     /hosts                                                  --This file lists the network host names and IP addresses that are intrinsically known to the system.
     /init.d                                                 --This directory contains the scripts that start various system services typically at boot time.
+=======
+Linux has no concept of a "file extension"
+>>>>>>> refs/remotes/origin/dir
