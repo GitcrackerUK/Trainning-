@@ -31,18 +31,32 @@ $ less <File name>                                       --Opens text file in ed
 
 ==============================================================================================
 $ gsettings set org.gnome.desktop.wm.preferences focus-mode 'sloppy'   --"focus follows mouse"
-
-
-
-<<<<<<< HEAD
 Linux has no concept of a "file extension"
 
-Root directory
+
+
+==============================================================================================
+Root directory:
+/boot                                                       --
 /etc                                                        --Directory contain the configuration files for the system.
     /passwd                                                 --The passwd file contains the essential information for each user. It is here that users are defined.
     /fstab                                                  --The fstab file contains a table of devices that get mounted when your system boots. This file defines your disk drives.
     /hosts                                                  --This file lists the network host names and IP addresses that are intrinsically known to the system.
     /init.d                                                 --This directory contains the scripts that start various system services typically at boot time.
-=======
-Linux has no concept of a "file extension"
->>>>>>> refs/remotes/origin/dir
+/bin,  /usr/bin                                             --These two directories contain most of the programs for the system.
+                                                              The /bin directory has the essential programs that the system requires to operate,
+                                                              while /usr/bin contains applications for the system's users.
+/sbin, /usr/sbin                                            --The sbin directories contain programs for system administration, mostly for use by the superuser.
+/usr                                                        --The /usr directory contains a variety of things that support user applications.
+    /local                                                  --/usr/local and its subdirectories are used for the installation of software and other files for use on the local machine.
+                                                               What this really means is that software that is not part of the official distribution (which usually goes in /usr/bin) goes here.
+/var                                                        --The /var directory contains files that change as the system is running.
+/lib                                                        --The shared libraries (similar to DLLs in that other operating system) are kept here.
+/home                                                       --/home is where users keep their personal work. In general, this is the only place users are allowed to write files.
+/root                                                       --This is the superuser's home directory.
+/tmp                                                        --Directory in which programs can write their temporary files.
+/dev                                                        --Contains devices that are available to the system.
+/proc                                                       --Informations about running processes.
+/media                                                      --Normal directory which is used for mounting points.
+
+
