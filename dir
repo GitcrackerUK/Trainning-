@@ -4,6 +4,7 @@ $ cp <File name><New name of copied file>                --Copies file and creat
 $ mv                                                     --Moves files or rename files or both
 ----------------------------------------------------------------------------------------------
 $ rm <file name>                                         --Removes file from directory
+$ hash -r                                                --Removes file hash
 ==============================================================================================
 absolute pathname                                        --Begins with the root directory and follows the tree branch by branch until the path to the desired directory or file is completed.
 relative pathname
@@ -84,9 +85,11 @@ $ ls >> file_list.txt                                       --Apends list of fil
 $ sort < file_list.txt                                      --Displays sorted list of files in dictionary
 $ sort < file_list.txt > sorted_file_list.txt               --Saves sorted list of files from one to the other
 ----------------------------------------------------------------------------------------------
-PIPELINE
-$ ls -l | less
-$ls -lt | head
+PIPELINE examples
+$ ls -l | less                                              --Display list of long list files in text editor
+$ ls -lt | head                                             --Displays the 10 newest files in the current directory.
+$ du | sort -nr                                             --Disply list of directories and how much space they consume, sorted from the largest to the smallest.
+$ find . -type f -print | wc -l
 
 
 
