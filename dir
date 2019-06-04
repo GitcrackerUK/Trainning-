@@ -19,8 +19,9 @@ $ ls -a                                                  --List of all files inc
 $ ls ~                                                   --List of files in home directory
 $ ls /<dir>                                              --List of files in specified directory
 ----------------------------------------------------------------------------------------------
-$ ls > <file>                                            --Saves list of files in dir into file
-$ ls >> <file>                                           --Apends list of files in dir into file
+$ ls > <file>                                            --Saves list of files from dir into file
+$ ls >> <file>                                           --Apends list of files from dir into file
+$ <command> | <command>                                  -- Pipeline, redirect output from one command to another one
 ----------------------------------------------------------------------------------------------
 $ pwd                                                    --Printing working directory
 $ file <name of file>                                    --determine file content
@@ -44,17 +45,16 @@ Wildcards                                                  -- allow to select fi
 
 ==============================================================================================
 Four types of commands:
-*An executable program                                               --
-*A command built into the shell                                      -- Shell builtin
-*A shell function                                                    --
-*An alias                                                            --
+*An executable program                                      --
+*A command built into the shell                             -- Shell builtin
+*A shell function                                           --
+*An alias                                                   --
 
-$ type  <command>                                                    -- Disply information about command type
-$ which <command>                                                    -- Locate a command
-$ help  <command>                                                    -- Display reference page for shell builtin
-$ man   <command>                                                    -- Display an online command reference
-
-
+$ type  <command>                                           -- Disply information about command type
+$ which <command>                                           -- Locate a command
+$ help  <command>                                           -- Display reference page for shell builtin
+$ man   <command>                                           -- Display an online command reference
+$ <command> | <command>                                     -- Pipeline, redirect output from one command to another one
 ==============================================================================================
 Root directory:
 /boot                                                       --
