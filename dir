@@ -1,9 +1,10 @@
 $ touch <file name>                                      --creates new file via terminal
+$ mkdir                                                  --Create directory
 $ cp <File name><New name of copied file>                --Copies file and creating new with sepcified name
 ----------------------------------------------------------------------------------------------
-$ rm <file name>                                         --removes file from directory
+$ rm <file name>                                         --Removes file from directory
 ==============================================================================================
-absolute pathname - begins with the root directory and follows the tree branch by branch until the path to the desired directory or file is completed.
+absolute pathname                                        --Begins with the root directory and follows the tree branch by branch until the path to the desired directory or file is completed.
 relative pathname
 $ cd ~user_name                                          --Change the working directory to home directory of specified user
 $ cd.                                                    --
@@ -33,7 +34,7 @@ $ less <File name>                                       --Opens text file in ed
 $ gsettings set org.gnome.desktop.wm.preferences focus-mode 'sloppy'   --"focus follows mouse"
 Linux has no concept of a "file extension"
 Symbolic links  ($ ln )                                    -- a special type of file that points to another file.
-
+Wildcards                                                  -- allow to select filenames based on patterns of characters.
 
 
 ==============================================================================================
