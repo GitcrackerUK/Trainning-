@@ -1,6 +1,7 @@
 $ touch <file name>                                      --creates new file via terminal
 $ mkdir                                                  --Create directory
 $ cp <File name><New name of copied file>                --Copies file and creating new with sepcified name
+$ mv                                                     --Moves files or rename files or both
 ----------------------------------------------------------------------------------------------
 $ rm <file name>                                         --Removes file from directory
 ==============================================================================================
@@ -35,6 +36,19 @@ $ gsettings set org.gnome.desktop.wm.preferences focus-mode 'sloppy'   --"focus 
 Linux has no concept of a "file extension"
 Symbolic links  ($ ln )                                    -- a special type of file that points to another file.
 Wildcards                                                  -- allow to select filenames based on patterns of characters.
+
+
+==============================================================================================
+Four types of commands:
+*An executable program                                               --
+*A command built into the shell                                      -- Shell builtin
+*A shell function                                                    --
+*An alias                                                            --
+
+$ type  <command>                                                    -- Disply information about command type
+$ which <command>                                                    -- Locate a command
+$ help  <command>                                                    -- Display reference page for shell builtin
+$ man   <command>                                                    -- Display an online command reference
 
 
 ==============================================================================================
