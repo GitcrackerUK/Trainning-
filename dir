@@ -21,7 +21,7 @@ $ ls /<dir>                                              --List of files in spec
 ----------------------------------------------------------------------------------------------
 $ ls > <file>                                            --Saves list of files from dir into file
 $ ls >> <file>                                           --Apends list of files from dir into file
-$ <command> | <command>                                  -- Pipeline, redirect output from one command to another one
+$ <command> | <command>                                  --Pipeline, redirect output from one command to another one
 ----------------------------------------------------------------------------------------------
 $ pwd                                                    --Printing working directory
 $ file <name of file>                                    --determine file content
@@ -54,7 +54,6 @@ $ type  <command>                                           -- Disply informatio
 $ which <command>                                           -- Locate a command
 $ help  <command>                                           -- Display reference page for shell builtin
 $ man   <command>                                           -- Display an online command reference
-$ <command> | <command>                                     -- Pipeline, redirect output from one command to another one
 ==============================================================================================
 Root directory:
 /boot                                                       --
@@ -78,5 +77,16 @@ Root directory:
 /dev                                                        --Contains devices that are available to the system.
 /proc                                                       --Informations about running processes.
 /media                                                      --Normal directory which is used for mounting points.
+==============================================================================================
+I/O Redirection
+$ ls > file_list.txt                                        --Saves list of files of dictionary in file_list.txt
+$ ls >> file_list.txt                                       --Apends list of files of dictionary in file_list.txt
+$ sort < file_list.txt                                      --Displays sorted list of files in dictionary
+$ sort < file_list.txt > sorted_file_list.txt               --Saves sorted list of files from one to the other
+----------------------------------------------------------------------------------------------
+PIPELINE
+$ ls -l | less
+$ls -lt | head
+
 
 
