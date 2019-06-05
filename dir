@@ -79,8 +79,8 @@ Root directory:
 /proc                                                       --Informations about running processes.
 /media                                                      --Normal directory which is used for mounting points.
 ==============================================================================================
-Standarts streams                                           --Are preconnected input and output communication channels between a computer program and its environment.
-!!Log file                                                    --
+Standarts streams                                           --Preconnected input and output communication channels between a computer program and its environment.
+!!Log file                                                  --
 I/O Redirection
 $ ls > file_list.txt                                        --Saves list of files of dictionary in file_list.txt
 $ ls >> file_list.txt                                       --Apends list of files of dictionary in file_list.txt
