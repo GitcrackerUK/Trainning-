@@ -33,6 +33,7 @@ FIle Permissions       Owner      Group      Size   Modification Time         Fi
 ----------------------------------------------------------------------------------------------
 drwxr-xr-x         8 gitcracker gitcracker   4096      lut 14 19:15      PycharmProjects
 ==============================================================================================
+$ cat <file name>                                        --Prints out text file in terminal
 $ less <File name>                                       --Opens text file in editor
 $ jobs                                                   --
 
@@ -92,6 +93,17 @@ $ ls -l | less                                              --Display list of lo
 $ ls -lt | head                                             --Displays the 10 newest files in the current directory.
 $ du | sort -nr                                             --Disply list of directories and how much space they consume, sorted from the largest to the smallest.
 $ find . -type f -print | wc -l
+
+Common filters used in pipelines:
+sort                                                        --Sorts standard input then outputs the sorted result on standard output.
+uniq                                                        --Given a sorted stream of data from standard input, it removes duplicate lines of data
+grep                                                        --
+fmt                                                         --
+head                                                        --
+tail                                                        --
+tr                                                          --
+sed                                                         --
+awk                                                         --
 
 
 
