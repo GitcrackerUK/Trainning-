@@ -36,7 +36,7 @@ drwxr-xr-x         8 gitcracker gitcracker   4096      lut 14 19:15      Pycharm
 $ cat <file name>                                        --Prints out text file in terminal
 $ less <File name>                                       --Opens text file in editor
 $ jobs                                                   --
-
+$ echo                                                   --Prints out text arguments on standart output
 
 ==============================================================================================
 $ gsettings set org.gnome.desktop.wm.preferences focus-mode 'sloppy'   --"focus follows mouse"
@@ -105,5 +105,10 @@ tr                                                          --
 sed                                                         --
 awk                                                         --
 
+==============================================================================================
+Cleaning dir from unused files
 
-
+$ sudo apt-get update
+$ sudo apt-get autoclean
+$ sudo apt-get clean
+$ sudo apt-get autoremove
