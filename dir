@@ -93,7 +93,7 @@ $ ls -l | less                                              --Display list of lo
 $ ls -lt | head                                             --Displays the 10 newest files in the current directory.
 $ du | sort -nr                                             --Disply list of directories and how much space they consume, sorted from the largest to the smallest.
 $ find . -type f -print | wc -l
-
+----------------------------------------------------------------------------------------------
 Common filters used in pipelines:
 sort                                                        --Sorts standard input then outputs the sorted result on standard output.
 uniq                                                        --Given a sorted stream of data from standard input, it removes duplicate lines of data
@@ -104,20 +104,16 @@ tail                                                        --
 tr                                                          --
 sed                                                         --
 awk                                                         --
-
 ==============================================================================================
 changing user permission:
-
 $ chmod 777 box                                             --changing permision to file for users
 $ sudo su                                                   --getting superuser permission
 ==============================================================================================
-Cleaning dir from unused files
-
+Cleaning dir from unused files:
 $ sudo apt-get update
 $ sudo apt-get autoclean
 $ sudo apt-get clean
 $ sudo apt-get autoremove
-
 ==============================================================================================
 Job control:
 $ ps                                                         --list the processes running on the system
@@ -125,12 +121,11 @@ $ kill                                                       --close one or more
 $ jobs                                                       --list own processes
 $ bg                                                         --put a process in the background
 $ fg                                                         --put a process in the forground
-
+----------------------------------------------------------------------------------------------
+Starting & closing a process:
 $ xload                                                      --lunching process
-$ ctrl+z                                                     --putting process to background
-$ ps                                                         --listing processes
-$ jobs                                                       --listing processes
-$ kill <process id>                                          --killing process
-
-
+$ ctrl+z                                                     --putting  process to background
+$ ps                                                         --listing  processes with job nr
+$ jobs                                                       --listing  processes with process id PID
+$ kill <process id>                                          --killing  process
 ==============================================================================================
