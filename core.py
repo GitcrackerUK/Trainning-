@@ -19,3 +19,9 @@
 """rm (file name)"""     # removes file from dir
 
 """ whereis python3.7""" #comand to locate files/programs
+
+
+# Text I/O
+# Binary I/O
+# Raw I/O
+
