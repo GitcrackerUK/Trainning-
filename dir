@@ -106,9 +106,15 @@ sed                                                         --
 awk                                                         --
 
 ==============================================================================================
+changin permission for user:
+
+$ chmod 777 box                                             --changing permision to file for users
+
+==============================================================================================
 Cleaning dir from unused files
 
 $ sudo apt-get update
 $ sudo apt-get autoclean
 $ sudo apt-get clean
 $ sudo apt-get autoremove
+
