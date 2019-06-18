@@ -119,3 +119,12 @@ $ sudo apt-get clean
 $ sudo apt-get autoremove
 
 ==============================================================================================
+Job control:
+$ ps                                                         --list the processes running on the system
+$ kill                                                       --close one or more processes
+$ jobs                                                       --list own processes
+$ bg                                                         --put a process in the background
+$ fg                                                         --put a process in the forground
+
+
+==============================================================================================
