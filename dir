@@ -109,7 +109,7 @@ awk                                                         --
 changin permission for user:
 
 $ chmod 777 box                                             --changing permision to file for users
-
+$ sudo su                                                   --getting superuser permission
 ==============================================================================================
 Cleaning dir from unused files
 
@@ -118,3 +118,4 @@ $ sudo apt-get autoclean
 $ sudo apt-get clean
 $ sudo apt-get autoremove
 
+==============================================================================================
