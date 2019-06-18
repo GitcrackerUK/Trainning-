@@ -126,5 +126,11 @@ $ jobs                                                       --list own processe
 $ bg                                                         --put a process in the background
 $ fg                                                         --put a process in the forground
 
+$ xload                                                      --lunching process
+$ ctrl+z                                                     --putting process to background
+$ ps                                                         --listing processes
+$ jobs                                                       --listing processes
+$ kill <process id>                                          --killing process
+
 
 ==============================================================================================
