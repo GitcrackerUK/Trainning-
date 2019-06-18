@@ -1539,3 +1539,13 @@ Twinkle, twinkle, little star,
 #
 # list=os.system("ls")
 # print(list)
+
+url = urllib.request.urlopen("http://www.google.com")
+data = url.read()
+print(data)
+
+import os
+
+list=os.system("ls")
+print(list)
+

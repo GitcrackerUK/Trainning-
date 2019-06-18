@@ -1,7 +1,31 @@
-GIT                                                   -https://learngitbranching.js.org
-PYTHON                                                -Python Basic (Part -I) [ 150 Exercises with Solution ]
-edx
+GIT                                                    -https://learngitbranching.js.org
+
+<<<<<<< HEAD
+TERMINAL/DIRECTORY                                    -http://linuxcommand.org
+*What is "the Shell"?
+=======
+LINUX TERMINAL/DIRECTORY                               -http://linuxcommand.org/lc3_learning_the_shell.php
+*What is "the Shell"
+>>>>>>> 629a0c1babed8a0416be9df2c81f9336ec2ef638
+*Navigation
+*Looking Around
+*A Guided Tour
+*Manipulating Files
+*Working with Commands
+*I/O Redirection
+*Expansion
+*Permissions
+*Job Control
+USEFULL LINKS                                           -https://www.linuxjournal.com/
+
+PYTHON                                                  -https://www.w3resource.com
+*Python Basic (Part -I) [ 150 Exercises with Solution ]
+
+EDX                                                    -
 Flask
 Django
 SQL
 PostgareSQL
+
+
+
