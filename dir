@@ -106,7 +106,7 @@ sed                                                         --
 awk                                                         --
 
 ==============================================================================================
-changin permission for user:
+changing user permission:
 
 $ chmod 777 box                                             --changing permision to file for users
 $ sudo su                                                   --getting superuser permission
