@@ -37,7 +37,7 @@ $ cat <file name>                                        --Prints out text file 
 $ less <File name>                                       --Opens text file in editor
 $ jobs                                                   --
 $ echo                                                   --Prints out text arguments on standart output
-
+xdg-open hello.html                                      --opens HTML file
 ==============================================================================================
 $ gsettings set org.gnome.desktop.wm.preferences focus-mode 'sloppy'   --"focus follows mouse"
 Linux has no concept of a "file extension"
