@@ -91,7 +91,7 @@ $ sort < file_list.txt > sorted_file_list.txt               --Saves sorted list 
 PIPELINE examples
 $ ls -l | less                                              --Display list of long list files in text editor
 $ ls -lt | head                                             --Displays the 10 newest files in the current directory.
-$ du | sort -nr                                             --Disply list of directories and how much space they consume, sorted from the largest to the smallest.
+$ du | sort -nr                                             --Display list of directories and how much space they consume, sorted from the largest to the smallest.
 $ find . -type f -print | wc -l
 ----------------------------------------------------------------------------------------------
 Common filters used in pipelines:
