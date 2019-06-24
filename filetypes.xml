@@ -5,6 +5,7 @@
       <mapping pattern="Error" type="PLAIN_TEXT" />
       <mapping pattern="Bunty" type="PLAIN_TEXT" />
       <mapping pattern="Python" type="PLAIN_TEXT" />
+      <mapping pattern="sort" type="PLAIN_TEXT" />
       <mapping pattern="without #" type="PLAIN_TEXT" />
       <mapping pattern="Pyt" type="PLAIN_TEXT" />
       <mapping pattern="dir" type="PLAIN_TEXT" />
