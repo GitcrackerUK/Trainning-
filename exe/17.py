@@ -1,7 +1,11 @@
-def near_thousand(n):
-    return ((abs(1000 - n) <= 100) or (abs(2000 - n) <= 100))
-print(near_thousand(1000))
-print(near_thousand(900))
-print(near_thousand(800))
-print(near_thousand(2200))
-print(near_thousand(100))
+n=int(input("Enter number:"))
+def near(n):
+    return (abs(n-1000)<=100) or (abs(n-2000)<=100)
+
+print(near(n))
+
+
+print(near(1000))
+print(near(900))
+print(near(800))
+print(near(2200))
