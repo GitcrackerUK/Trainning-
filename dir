@@ -110,10 +110,10 @@ $ chmod 777 box                                             --changing permision
 $ sudo su                                                   --getting superuser permission
 ==============================================================================================
 Cleaning dir from unused files:
-$ sudo apt-get update
-$ sudo apt-get autoclean
-$ sudo apt-get clean
-$ sudo apt-get autoremove
+ sudo apt-get update
+ sudo apt-get autoclean
+ sudo apt-get clean
+ sudo apt-get autoremove
 ==============================================================================================
 Job control:
 $ ps                                                         --list the processes running on the system
@@ -129,3 +129,11 @@ $ ps                                                         --listing  processe
 $ jobs                                                       --listing  processes with process id PID
 $ kill <process id>                                          --killing  process
 ==============================================================================================
+
+To creat shell script:
+1. Make script                                               --helloWorld
+2. Give permisrion                                           --$chmod 755 helloWorld
+3. Put somewhere the shell can find it                       --$export PATH=$PATH:box
+
+
+export PATH=$PATH:box                                        --Adding dir to working path directory of exucutable files
