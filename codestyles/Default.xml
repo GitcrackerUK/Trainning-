@@ -1,1 +1,8 @@
-<code_scheme name="Default" version="173" />
+<code_scheme name="Default" version="173">
+  <codeStyleSettings language="HTML">
+    <indentOptions>
+      <option name="INDENT_SIZE" value="6" />
+      <option name="TAB_SIZE" value="5" />
+    </indentOptions>
+  </codeStyleSettings>
+</code_scheme>
