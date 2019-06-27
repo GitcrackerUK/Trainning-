@@ -37,7 +37,7 @@ $ cat <file name>                                        --Prints out text file 
 $ less <File name>                                       --Opens text file in editor
 $ jobs                                                   --
 $ echo                                                   --Prints out text arguments on standart output
-xdg-open hello.html                                      --opens HTML file
+
 ==============================================================================================
 $ gsettings set org.gnome.desktop.wm.preferences focus-mode 'sloppy'   --"focus follows mouse"
 Linux has no concept of a "file extension"
@@ -91,7 +91,7 @@ $ sort < file_list.txt > sorted_file_list.txt               --Saves sorted list 
 PIPELINE examples
 $ ls -l | less                                              --Display list of long list files in text editor
 $ ls -lt | head                                             --Displays the 10 newest files in the current directory.
-$ du | sort -nr                                             --Disply list of directories and how much space they consume, sorted from the largest to the smallest.
+$ du | sort -nr                                             --Display list of directories and how much space they consume, sorted from the largest to the smallest.
 $ find . -type f -print | wc -l
 ----------------------------------------------------------------------------------------------
 Common filters used in pipelines:
@@ -110,10 +110,11 @@ $ chmod 777 box                                             --changing permision
 $ sudo su                                                   --getting superuser permission
 ==============================================================================================
 Cleaning dir from unused files:
- sudo apt-get update
- sudo apt-get autoclean
- sudo apt-get clean
- sudo apt-get autoremove
+$ sudo apt-get update
+$ sudo apt-get autoclean
+$ sudo apt-get clean
+$ sudo apt-get autoremove
+
 ==============================================================================================
 Job control:
 $ ps                                                         --list the processes running on the system
@@ -129,11 +130,3 @@ $ ps                                                         --listing  processe
 $ jobs                                                       --listing  processes with process id PID
 $ kill <process id>                                          --killing  process
 ==============================================================================================
-
-To creat shell script:
-1. Make script                                               --helloWorld
-2. Give permisrion                                           --$chmod 755 helloWorld
-3. Put somewhere the shell can find it                       --$export PATH=$PATH:box
-
-
-export PATH=$PATH:box                                        --Adding dir to working path directory of exucutable files
