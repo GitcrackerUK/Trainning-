@@ -1,0 +1,131 @@
+$ touch <file name>                                      --creates new file via terminal
+$ mkdir                                                  --Create directory
+$ cp <File name><New name of copied file>                --Copies file and creating new with sepcified name
+$ mv                                                     --Moves files or rename files or both
+----------------------------------------------------------------------------------------------
+$ rm <file name>                                         --Removes file from directory
+$ hash -r                                                --Removes file hash
+==============================================================================================
+absolute pathname                                        --Begins with the root directory and follows the tree branch by branch until the path to the desired directory or file is completed.
+relative pathname
+$ cd ~user_name                                          --Change the working directory to home directory of specified user
+$ cd.                                                    --
+$ cd <file path>                                         --
+$ cd/                                                    --Navigates to root directory (/$)
+$ cd                                                     --Navigates to home directory (~$)
+==============================================================================================
+$ ls                                                     --List of all files excluded hiden files
+$ ls -l                                                  --List of all files excluded hiden files in Long Format
+$ ls -a                                                  --List of all files included hiden files
+$ ls ~                                                   --List of files in home directory
+$ ls /<dir>                                              --List of files in specified directory
+----------------------------------------------------------------------------------------------
+$ ls > <file>                                            --Saves list of files from dir into file
+$ ls >> <file>                                           --Apends list of files from dir into file
+$ <command> | <command>                                  --Pipeline, redirect output from one command to another one
+----------------------------------------------------------------------------------------------
+$ pwd                                                    --Printing working directory
+$ file <name of file>                                    --determine file content
+============================================================================================
+$ ls -l
+Long Format:
+FIle Permissions       Owner      Group      Size   Modification Time         File Name
+----------------------------------------------------------------------------------------------
+drwxr-xr-x         8 gitcracker gitcracker   4096      lut 14 19:15      PycharmProjects
+==============================================================================================
+$ cat <file name>                                        --Prints out text file in terminal
+$ less <File name>                                       --Opens text file in editor
+$ jobs                                                   --
+$ echo                                                   --Prints out text arguments on standart output
+
+==============================================================================================
+$ gsettings set org.gnome.desktop.wm.preferences focus-mode 'sloppy'   --"focus follows mouse"
+Linux has no concept of a "file extension"
+Symbolic links  ($ ln )                                    -- a special type of file that points to another file.
+Wildcards                                                  -- allow to select filenames based on patterns of characters.
+
+
+==============================================================================================
+Four types of commands:
+*An executable program                                      --
+*A command built into the shell                             -- Shell builtin
+*A shell function                                           --
+*An alias                                                   --
+
+$ type  <command>                                           -- Disply information about command type
+$ which <command>                                           -- Locate a command
+$ help  <command>                                           -- Display reference page for shell builtin
+$ man   <command>                                           -- Display an online command reference
+==============================================================================================
+Root directory:
+/boot                                                       --
+/etc                                                        --Directory contain the configuration files for the system.
+    /passwd                                                 --The passwd file contains the essential information for each user. It is here that users are defined.
+    /fstab                                                  --The fstab file contains a table of devices that get mounted when your system boots. This file defines your disk drives.
+    /hosts                                                  --This file lists the network host names and IP addresses that are intrinsically known to the system.
+    /init.d                                                 --This directory contains the scripts that start various system services typically at boot time.
+/bin,  /usr/bin                                             --These two directories contain most of the programs for the system.
+                                                              The /bin directory has the essential programs that the system requires to operate,
+                                                              while /usr/bin contains applications for the system's users.
+/sbin, /usr/sbin                                            --The sbin directories contain programs for system administration, mostly for use by the superuser.
+/usr                                                        --The /usr directory contains a variety of things that support user applications.
+    /local                                                  --/usr/local and its subdirectories are used for the installation of software and other files for use on the local machine.
+                                                               What this really means is that software that is not part of the official distribution (which usually goes in /usr/bin) goes here.
+/var                                                        --The /var directory contains files that change as the system is running.
+/lib                                                        --The shared libraries (similar to DLLs in that other operating system) are kept here.
+/home                                                       --/home is where users keep their personal work. In general, this is the only place users are allowed to write files.
+/root                                                       --This is the superuser's home directory.
+/tmp                                                        --Directory in which programs can write their temporary files.
+/dev                                                        --Contains devices that are available to the system.
+/proc                                                       --Informations about running processes.
+/media                                                      --Normal directory which is used for mounting points.
+==============================================================================================
+Standarts streams                                           --Preconnected input and output communication channels between a computer program and its environment.
+!!Log file                                                  --
+I/O Redirection
+$ ls > file_list.txt                                        --Saves list of files of dictionary in file_list.txt
+$ ls >> file_list.txt                                       --Apends list of files of dictionary in file_list.txt
+$ sort < file_list.txt                                      --Displays sorted list of files in dictionary
+$ sort < file_list.txt > sorted_file_list.txt               --Saves sorted list of files from one to the other
+----------------------------------------------------------------------------------------------
+PIPELINE examples
+$ ls -l | less                                              --Display list of long list files in text editor
+$ ls -lt | head                                             --Displays the 10 newest files in the current directory.
+$ du | sort -nr                                             --Display list of directories and how much space they consume, sorted from the largest to the smallest.
+$ find . -type f -print | wc -l
+----------------------------------------------------------------------------------------------
+Common filters used in pipelines:
+sort                                                        --Sorts standard input then outputs the sorted result on standard output.
+uniq                                                        --Given a sorted stream of data from standard input, it removes duplicate lines of data
+grep                                                        --
+fmt                                                         --
+head                                                        --
+tail                                                        --
+tr                                                          --
+sed                                                         --
+awk                                                         --
+==============================================================================================
+changing user permission:
+$ chmod 777 box                                             --changing permision to file for users
+$ sudo su                                                   --getting superuser permission
+==============================================================================================
+Cleaning dir from unused files:
+$ sudo apt-get update
+$ sudo apt-get autoclean
+$ sudo apt-get clean
+$ sudo apt-get autoremove
+==============================================================================================
+Job control:
+$ ps                                                         --list the processes running on the system
+$ kill                                                       --close one or more processes
+$ jobs                                                       --list own processes
+$ bg                                                         --put a process in the background
+$ fg                                                         --put a process in the forground
+----------------------------------------------------------------------------------------------
+Starting & closing a process:
+$ xload                                                      --lunching process
+$ ctrl+z                                                     --putting  process to background
+$ ps                                                         --listing  processes with job nr
+$ jobs                                                       --listing  processes with process id PID
+$ kill <process id>                                          --killing  process
+==============================================================================================

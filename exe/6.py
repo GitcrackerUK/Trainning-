@@ -1,0 +1,5 @@
+list=input("Enter coma separeted numbers")
+list=list.split(",")
+tuple=tuple(list)
+print("list:",list)
+print("Tuple:",tuple)
