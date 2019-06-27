@@ -38,6 +38,12 @@ $ git pull                                       --Downloads commits from remote
 $ git pull --rebase                              --Downloads commits from remote repository to local and creating new SEPERATE commit
 $ git fetch                                      --Downloads commits from remote repository to local but NOT updayting local repository.
 $ git clone                                      --Cloning local repository to github
+  
+CLEARING WORKING DIRECTORY FOR .GITIGNORE
+$git rm -r --cached .
+$git add .
+$git commit -m "fixed untracked files"
+
 
   DELETING FROM WORKING DIRECTORY:
 $ git push <remote_name> --delete <branch_name>  --Deleting remote branch
