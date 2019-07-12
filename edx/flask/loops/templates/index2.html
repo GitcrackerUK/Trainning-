@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Website!</title>
+    </head>
+    <body>
+        <h1>Names</h1>
+
+        <ol>
+            {% for name in names2 %}
+                <li>{{ name }}</li>
+            {% endfor %}
+        </ol>
+
+        <ul>
+            {% for name in names %}
+                <li>{{ name }}</li>
+            {% endfor %}
+        </ul>
+
+
+
+
+        <h1> Dodatkowe listy</h1>
+
+        <ol>
+            {% for name in names %}
+            <li>{{name}}</li>
+            {% endfor %}
+
+            {% for name in names2 %}
+            <li>{{name}}</li>
+            {% endfor %}
+        </ol>
+
+
+    </body>
+</html>
