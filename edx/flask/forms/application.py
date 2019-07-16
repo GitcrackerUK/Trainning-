@@ -10,3 +10,11 @@ def index():
 def hello():
     name = request.form.get("name")
     return render_template("hello.html", name=name)
+
+
+
+
+@app.route("/auto", methods=["POST"])
+def auto():
+    name =reguest.form.get("name")
+    return render_template("auto.html", name=name)
