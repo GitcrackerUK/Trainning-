@@ -12,9 +12,20 @@ def hello():
     return render_template("hello.html", name=name)
 
 
-
-
-@app.route("/auto", methods=["POST"])
+@app.route("/auto", methods=["GET","POST"])
 def auto():
-    name =reguest.form.get("name")
-    return render_template("auto.html", name=name)
+    if request.method == "GET":
+        return render_template("warning.html")
+    else:
+        name = request.form.get("name")
+        return render_template("auto.html", name=name)
+
+@app.route("/place", methods=["POST"])
+def place():
+    name=request.form.get("name")
+    return render_template("place.html", name=name)
+
+@app.route("/color", methods=["POST"])
+def color():
+    name=request.form.get("name")
+    return render_template("color.html", name=name)
