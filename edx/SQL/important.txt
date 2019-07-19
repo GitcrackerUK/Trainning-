@@ -41,6 +41,39 @@ SELECT * FROM flights LIMIT 2;
 SELECT * FROM flights ORDER BY duration ASC LIMIT 3;
 SELECT origin , COUNT(*) FROM  flights GROUP BY origin HAVING COUNT(*) > 1;
 
-5)
+5)JOIN
+
 SELECT origin, destination, name FROM flights JOIN passengers on passengers.flight_id=flights.id ;
 SELECT origin, destination, name FROM flights JOIN passengers on passengers.flight_id=flights.id WHERE name = 'Alice';
+SELECT origin, destination, name FROM flights LEFT JOIN passengers ON passengers.flight_id=flights.id;
+
+6) INDEX
+
+SELECT * FROM flights WHERE id IN (SELECT flight_id FROM passengers GROUP BY flight_id HAVING COUNT (*) > 1);
+
+7) SQL Transactions
+BEGIN
+COMMIT
+
+8)SQLAlchemy
+
+9)
+lsof -i :5000
+kill -9 <PID>
+
+10)
+
+export DATABASE_URL="postgres://nijugzaeqmiwjg:866b4cdcac43dc5bcab214b73a01f09f36fbd04050957fd4e38ecd0e75fe87d5@ec2-54-246-84-100.eu-west-1.compute.amazonaws.com:5432/dbv87pjvrlbn27"
+
+11) INSTALING psycopg2
+
+sudo apt-get update
+sudo apt-get install -y build-essential
+sudo apt-get install -y python3.4-dev
+sudo apt-get install -y libpq-dev
+
+pip3 install psycopg2
+
+12)
+
+
