@@ -1,11 +1,27 @@
 
-$service postgresql start  -Start PostgreSQL
+$locate <file>             -get file path
+$pg_config --version       -check version of postgresql
+--------------------------------------------------------
+$service postgresql start  {start|stop|restart|reload|force-reload|status} -Start PostgreSQL
+--------------------------------------------------------
 $sudo su - postgres        -Log into the postgres user
 $psql                      -Log into the database by typing
+--------------------------------------------------------
 $exit                      -Get back to root
-
+$\l                        -list of db
+$\du                       -list of users
+$\dt                       -list of tables in curent schema
+$\conninfo                 -info about curent db connetion type
+$show data_directory;      -To see where the data directory is, use this query.
+$show all;                 -To see all the run-time parameters, use
+---------------------------------------------------------
+ALTER USER postgres PASSWORD 'baydon26';
+CREATE USER pablo WITH PASSWORD 'baydon26';
+DROP USER dbuser1;
 
 $service --status-all      -list all services
+engine = create_engine("postgresql://postgres:gitcracker@localhost/passengers")
+
 
 1)
 
@@ -61,9 +77,13 @@ COMMIT
 lsof -i :5000
 kill -9 <PID>
 
-10)
+10)Setting up DATABASE variable
 
-export DATABASE_URL="postgres://nijugzaeqmiwjg:866b4cdcac43dc5bcab214b73a01f09f36fbd04050957fd4e38ecd0e75fe87d5@ec2-54-246-84-100.eu-west-1.compute.amazonaws.com:5432/dbv87pjvrlbn27"
+REMOTE:
+$ export DATABASE_URL="postgres://nijugzaeqmiwjg:866b4cdcac43dc5bcab214b73a01f09f36fbd04050957fd4e38ecd0e75fe87d5@ec2-54-246-84-100.eu-west-1.compute.amazonaws.com:5432/dbv87pjvrlbn27"
+
+LOCAL DB it should be INSIDE APP.PY:
+engine = create_engine("postgresql://postgres:gitcracker@localhost/passengers")
 
 11) INSTALING psycopg2
 

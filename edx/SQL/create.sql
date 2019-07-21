@@ -4,3 +4,11 @@ CREATE TABLE flights (
     destination VARCHAR NOT NULL,
     duration INTEGER NOT NULL
 );
+
+CREATE TABLE books (
+    id SERIAL PRIMARY KEY,
+    isbn  integer  not null ,
+    title integer  NOT NULL,
+    author VARCHAR NOT NULL,
+    year varchar  NOT NULL
+);
