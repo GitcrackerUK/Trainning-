@@ -14,6 +14,8 @@ def main():
     # Change the value of a variable.
     f.duration += 10
 
+
+
     # Print details about flight.
     print(f.origin)
     print(f.destination)

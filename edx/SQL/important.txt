@@ -1,3 +1,4 @@
+export FLASK_APP=application.py
 
 $locate <file>             -get file path
 $pg_config --version       -check version of postgresql
@@ -80,10 +81,16 @@ kill -9 <PID>
 10)Setting up DATABASE variable
 
 REMOTE:
+
 $ export DATABASE_URL="postgres://nijugzaeqmiwjg:866b4cdcac43dc5bcab214b73a01f09f36fbd04050957fd4e38ecd0e75fe87d5@ec2-54-246-84-100.eu-west-1.compute.amazonaws.com:5432/dbv87pjvrlbn27"
 
+To log from local terminal in remote dg:
+psql $DATABASE_URL
+-------
 LOCAL DB it should be INSIDE APP.PY:
 engine = create_engine("postgresql://postgres:gitcracker@localhost/passengers")
+
+
 
 11) INSTALING psycopg2
 
