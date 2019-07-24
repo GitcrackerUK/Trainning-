@@ -7,10 +7,10 @@ CREATE TABLE flights (
 
 CREATE TABLE books (
     id SERIAL PRIMARY KEY,
-    isbn  integer  not null ,
+    isbn  integer  NOT NULL ,
     title integer  NOT NULL,
     author VARCHAR NOT NULL,
-    year varchar  NOT NULL
+    year varchar   NOT NULL
 );
 
 CREATE TABLE passangers (
