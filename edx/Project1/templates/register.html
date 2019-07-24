@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block heading %}
-    LOG PAGE
+    REGISTER
 {% endblock %}
 
 {% block body %}
@@ -10,18 +10,15 @@
         <li>Login: Users, once registered, should be able to log in to your website with their username and password.</li>
     </ul>
 
-    <form action="{{ url_for ('register') }}">
-        <button>REGISTER</button>
-    </form>
-
-
-
 
     <form action="{{ url_for ('main') }}" method="POST">
         <input type="text" name="login" placeholder="Enter Login">
         <input type="password" name="password" placeholder="Enter password">
-        <button>LOGIN</button>
+        <input type="password" name="password" placeholder="Enter password">
+        <input type="password" name="password" placeholder="Enter password">
+        <input type="password" name="password" placeholder="Enter password">
+        <button>Submit</button>
     </form>
 
-    <a href="{{ url_for('main') }}">MAIN</a>
+    <a href="{{ url_for('log') }}">LOGIN</a>
 {% endblock %}
