@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Is it New Year?</title>
+        <style>
+            body {
+                text-align: center;
+                background: pink;
+            }
+        </style>
+    </head>
+    <body>
+        {% if friday %}
+            <h1>Yes! Today is Friday!!!</h1>
+        {% else %}
+            <h1>NO</h1>
+        {% endif %}
+    <a href="{{ url_for('today') }} "> Today checker ....</a>
+                <p></p>
+
+    <a href="{{ url_for('index') }} "> New Year checker ....</a>
+    </body>
+</html>

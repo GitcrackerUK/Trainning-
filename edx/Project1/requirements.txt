@@ -2,3 +2,18 @@ Flask
 Flask-Session
 psycopg2
 SQLAlchemy
+
+
+
+
+FILE STRUCTURE:
+application.py       -- for general logic of a app
+books.csv            -- db file
+import.py            -- file to import books.csv on heroku
+requirements.txt     -- file with requirments and file structure
+------
+layout.html          -- layout of app
+log/reg.html         -- login or register
+main.html            -- main after log where search and result
+book.html            -- book page where results of serch with details of the book:
+                        title,athor,publication year, ISBN, reviews.

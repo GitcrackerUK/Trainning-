@@ -1,0 +1,106 @@
+export FLASK_APP=application.py
+
+$locate <file>             -get file path
+$pg_config --version       -check version of postgresql
+--------------------------------------------------------
+$service postgresql start  {start|stop|restart|reload|force-reload|status} -Start PostgreSQL
+--------------------------------------------------------
+$sudo su - postgres        -Log into the postgres user
+$psql                      -Log into the database by typing
+--------------------------------------------------------
+$exit                      -Get back to root
+$\l                        -list of db
+$\du                       -list of users
+$\dt                       -list of tables in curent schema
+$\conninfo                 -info about curent db connetion type
+$show data_directory;      -To see where the data directory is, use this query.
+$show all;                 -To see all the run-time parameters, use
+---------------------------------------------------------
+ALTER USER postgres PASSWORD 'baydon26';
+CREATE USER pablo WITH PASSWORD 'baydon26';
+DROP USER dbuser1;
+
+$service --status-all      -list all services
+engine = create_engine("postgresql://postgres:gitcracker@localhost/passengers")
+
+
+1)
+
+CREATE TABLE flights (
+    id SERIAL PRIMARY KEY,
+    origin VARCHAR NOT NULL,
+    destination VARCHAR NOT NULL,
+    duration INTEGER NOT NULL
+);
+
+/d --- check if table is created
+
+2)
+
+INSERT INTO flights (origin,destination,duration) VALUES ('New York','London',415);
+
+3)
+
+DELETE FROM flights
+WHERE id = 1;
+=======
+DROP TABLE passengers
+
+4)
+
+SELECT * FROM flights;
+SELECT * FROM flights WHERE duration > 500;
+SELECT * FROM flights WHERE destination = 'Paris' AND duration > 500 ;
+SELECT * FROM flights WHERE destination = 'New York' OR duration > 500;
+SELECT COUNT(*) FROM flights;
+SELECT * FROM flights WHERE origin LIKE '%a%';
+SELECT * FROM flights LIMIT 2;
+SELECT * FROM flights ORDER BY duration ASC LIMIT 3;
+SELECT origin , COUNT(*) FROM  flights GROUP BY origin HAVING COUNT(*) > 1;
+
+5)JOIN
+
+SELECT origin, destination, name FROM flights JOIN passengers on passengers.flight_id=flights.id ;
+SELECT origin, destination, name FROM flights JOIN passengers on passengers.flight_id=flights.id WHERE name = 'Alice';
+SELECT origin, destination, name FROM flights LEFT JOIN passengers ON passengers.flight_id=flights.id;
+
+6) INDEX
+
+SELECT * FROM flights WHERE id IN (SELECT flight_id FROM passengers GROUP BY flight_id HAVING COUNT (*) > 1);
+
+7) SQL Transactions
+BEGIN
+COMMIT
+
+8)SQLAlchemy
+
+9)
+lsof -i :5000
+kill -9 <PID>
+
+10)Setting up DATABASE variable
+
+REMOTE:
+
+$ export DATABASE_URL=postgres://nijugzaeqmiwjg:866b4cdcac43dc5bcab214b73a01f09f36fbd04050957fd4e38ecd0e75fe87d5@ec2-54-246-84-100.eu-west-1.compute.amazonaws.com:5432/dbv87pjvrlbn27
+
+To log from local terminal in remote dg:
+psql $DATABASE_URL
+-------
+LOCAL DB it should be INSIDE APP.PY:
+engine = create_engine("postgresql://postgres:gitcracker@localhost/passengers")
+
+
+
+11) INSTALING psycopg2
+
+sudo apt-get update
+sudo apt-get install -y build-essential
+sudo apt-get install -y python3.4-dev
+sudo apt-get install -y libpq-dev
+
+pip3 install psycopg2
+
+12)
+
+
