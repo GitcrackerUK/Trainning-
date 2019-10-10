@@ -1,4 +1,4 @@
-$ sudo su                                                --getting into super user mode (aftre typing password)
+$ sudo su                                                --getting into super user mode (password required)
 $ touch <file name>                                      --creates new file via terminal
 $ mkdir                                                  --Create directory
 $ cp <File name><New name of copied file>                --Copies file and creating new with sepcified name
