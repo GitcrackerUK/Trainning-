@@ -113,6 +113,7 @@ $ sudo su                                                   --getting superuser 
 Cleaning dir from unused files:
 $ sudo apt-get update
 $ sudo apt upgrade
+$ apt update & apt upgrade (in root user)
 $ sudo apt-get autoclean
 $ sudo apt-get clean
 $ sudo apt-get autoremove
